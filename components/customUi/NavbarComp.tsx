@@ -22,7 +22,7 @@ const NavbarComp = () => {
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header>
           <Offcanvas.Title className="uppercase fs-3">
-            <span className=" inline-block font-extrabold">portals</span>
+            <span className=" inline-block boldfont">portals</span>
             <span className=" text-blue-700 inline-block font-extrabold">
               <BsSquareFill size={5} />
             </span>
@@ -60,7 +60,7 @@ const NavbarComp = () => {
       <div className="sticky-top backdrop-blur-lg bg-white/80 px-2 px-md-0">
         <Navbar expand="lg" className=" container">
           <Navbar.Brand href="/" className=" uppercase fs-3 font-extrabold">
-            <span className=" inline-block">portals</span>
+            <span className=" inline-block boldfont">portals</span>
             <span className=" text-blue-700 inline-block">
               <BsSquareFill size={5} />
             </span>
