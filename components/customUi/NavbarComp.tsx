@@ -34,11 +34,11 @@ const NavbarComp = () => {
             <Link
               onClick={handleClose}
               href="/services"
-              className=" uppercase no-underline text-slate-700 transition hover:text-black my-3"
+              className="pointer uppercase no-underline text-slate-700 transition hover:text-black my-3"
             >
               Services
             </Link>
-            <Link onClick={handleClose} href="/wo rk" className=" uppercase no-underline text-slate-700 transition hover:text-black my-3">
+            <Link onClick={handleClose} href="/wo rk" className="pointer uppercase no-underline text-slate-700 transition hover:text-black my-3">
               Work
             </Link>
           </Nav>
@@ -47,7 +47,7 @@ const NavbarComp = () => {
             <Link
               onClick={handleClose}
               href={"/contact"}
-              className="my-3 uppercase no-underline text-black rounded-full px-3 py-1 hover:bg-blue-600/5 transition-colors"
+              className="my-3 pointer uppercase no-underline text-black rounded-full px-3 py-1 hover:bg-blue-600/5 transition-colors"
               style={{ border: "1px solid blue" }}
             >
               contact
@@ -72,18 +72,18 @@ const NavbarComp = () => {
             <Nav className="navbaritem ms-auto w-full flex justify-end items-center ">
               <Link
                 href="/services"
-                className=" uppercase me-5 no-underline text-black "
+                className="pointer uppercase me-5 no-underline text-black "
               >
                 Services
               </Link>
-              <Link href="/work" className=" uppercase no-underline text-black">
+              <Link href="/work" className="pointer uppercase no-underline text-black">
                 Work
               </Link>
             </Nav>
             <div className=" w-50 flex justify-end ">
               <Link
                 href={"/contact"}
-                className=" uppercase no-underline text-black rounded-full px-3 py-1 hover:bg-blue-600/5 transition-colors"
+                className="pointer uppercase no-underline text-black rounded-full px-3 py-1 hover:bg-blue-600/5 transition-colors"
                 style={{ border: "1px solid blue" }}
               >
                 contact
