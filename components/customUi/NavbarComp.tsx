@@ -30,7 +30,7 @@ const NavbarComp = () => {
         </Offcanvas.Header>
         <span onClick={handleClose} className=" absolute top-4 right-4"><AiOutlineClose size={25} /></span>
         <Offcanvas.Body>
-          <Nav className="w-full flex flex-col headcontent">
+          <Nav className="w-full flex flex-col headcontent z-40">
             <Link
               onClick={handleClose}
               href="/services"

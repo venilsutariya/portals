@@ -96,6 +96,22 @@
   width: 100%;
 }
 
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgb(11, 11, 95);
+}
+
 @keyframes headcontentanimation {
   0% {
     opacity: 0;
