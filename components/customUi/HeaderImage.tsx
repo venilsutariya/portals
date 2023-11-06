@@ -36,10 +36,10 @@ const HeaderImage = () => {
             <img src="/images/img5.png" alt="" className=" h-100 w-100" />
             <div className=" h-100 w-100 group-hover:bg-black/20  rounded-2xl absolute top-0" style={{ transition: 'all 0.3s' }}></div>
           </div>
-          <div className=" flex justify-between items-center mt-5">
+          <div className=" flex lg:justify-between items-center mt-5">
             <Link
               href={"/contact"}
-              className="pointer uppercase flex justify-center items-center hover:bg-opacity-90 no-underline text-white bg-blue-700 rounded-full px-3 py-2 border-0 transition-colors"
+              className="pointer mr-3 lg:mr-3 uppercase flex justify-center items-center hover:bg-opacity-90 no-underline text-white bg-blue-700 rounded-full px-3 py-2 border-0 transition-colors"
               style={{ border: "1px solid blue" }}
             >
               <span>contact</span><span className=" ms-2"><BsArrowRight size={22} /></span>
