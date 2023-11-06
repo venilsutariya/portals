@@ -74,3 +74,35 @@
     @apply bg-background text-foreground;
   }
 }
+
+.headcontent {
+  animation: headcontentanimation 1s ease-in-out;
+}
+
+/* navbar item */
+.navbaritem a::after {
+  content: "";
+  border-bottom: 1px solid #000;
+  display: block;
+  width: 0%;
+  opacity: 0;
+  transition: ease-in 0.3s;
+}
+.navbaritem a:hover {
+  color: #000;
+}
+.navbaritem a:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+@keyframes headcontentanimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

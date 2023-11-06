@@ -12,9 +12,9 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className=" uppercase text-4xl md:text-7xl lg:text-8xl xl:text-9xl">
+        <div className="headcontent uppercase text-4xl md:text-7xl lg:text-8xl xl:text-9xl">
           <div>design</div>
-          <div className=" flex justify-between">
+          <div className=" flex lg:justify-between">
             <span className=" text-slate-400">&</span>
             <span>development</span>
           </div>
