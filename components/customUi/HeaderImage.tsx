@@ -49,7 +49,7 @@ const HeaderImage = () => {
               className="pointer uppercase flex justify-center items-center no-underline text-black rounded-full px-3 py-2 hover:bg-blue-700/10 transition"
               style={{ border: "1px solid blue" }}
             >
-              <span className=" font-semibold">view more</span><span className="ms-2"><BsArrowRight size={22} /></span>
+              <span className=" font-semibold flex"><span className=" me-2">view</span><span>more</span></span><span className="ms-2"><BsArrowRight size={22} /></span>
             </Link>
           </div>
         </div>
