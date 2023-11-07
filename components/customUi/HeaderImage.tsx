@@ -2,8 +2,16 @@
 
 import Link from "next/link";
 import { BsArrowRight } from 'react-icons/bs';
+import { useScroll, motion } from "framer-motion";
+import { useRef } from 'react';
 
 const HeaderImage = () => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "0.8 1"],
+  });
 
   return (
     <div className=" container my-5 pt-5">
@@ -21,20 +29,19 @@ const HeaderImage = () => {
           <div style={{ transition: 'all 0.3s' }} className=" h-100 w-100 group-hover:bg-black/20  rounded-2xl absolute"></div>
         </div>
       </div>
-      <div className="row my-4">
-        <div className=" col-12 col-xl-8 group relative p-0">
+      <motion.div className="row my-4" ref={ref} style={{scale: scrollYProgress , display: scrollYProgress}}>
+        <div className=" col-12 col-xl-8 group relative p-0 animatediv">
           <img src="/images/img4.png" alt="" className=" img-fluid h-100 w-100" />
           <div style={{ transition: 'all 0.3s' }} className=" h-100 w-100 group-hover:bg-black/20 rounded-2xl absolute top-0"></div>
         </div>
-        <div className="col">
+        <div className="col-12 col-xl-4">
           <div className=" uppercase text-4xl lg:text-6xl mt-3 mt-xl-0">
             <div className=" mb-3">our</div>
             <div className=" mb-2">gallary</div>
             <div className=" mb-4">of work</div>
           </div>
-          <div className=" my-5 group relative">
-            <img src="/images/img5.png" alt="" className=" h-100 w-100" />
-            <div className=" h-100 w-100 group-hover:bg-black/20  rounded-2xl absolute top-0" style={{ transition: 'all 0.3s' }}></div>
+          <div className="w-100 my-5 group relative p-0">
+            <img src="/images/img5.png" alt="" className="img-fluid" />
           </div>
           <div className=" flex lg:justify-between items-center mt-5">
             <Link
@@ -53,7 +60,7 @@ const HeaderImage = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
