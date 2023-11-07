@@ -16,20 +16,20 @@ const HeaderImage = () => {
   return (
     <div className=" container my-5 pt-5">
       <div className=" row gap-3 px-3">
-        <div className=" col-12 mt-3  group mt-lg-0 col-lg flex relative h-100 w-100 p-0 justify-center">
+        <div className=" animatediv col-12 mt-3  group mt-lg-0 col-lg flex relative h-100 w-100 p-0 justify-center">
           <img src="/images/img1.png" alt="" className=" img-fluid h-100 w-100" />
           <div style={{ transition: 'all 0.3s' }} className=" h-100 w-100 transition group-hover:bg-black/20 rounded-2xl absolute"></div>
         </div>
-        <div className=" col-12 mt-3 group mt-lg-0 col-lg flex relative h-100 w-100 p-0 justify-center">
+        <div className=" animatediv col-12 mt-3 group mt-lg-0 col-lg flex relative h-100 w-100 p-0 justify-center">
           <img src="/images/img2.png" alt="" className=" img-fluid h-100 w-100" />
           <div style={{ transition: 'all 0.3s' }} className=" h-100 w-100 group-hover:bg-black/20  rounded-2xl absolute"></div>
         </div>
-        <div className=" col-12 mt-3 group mt-lg-0 col-lg flex relative h-100 w-100 p-0 justify-center">
+        <div className=" animatediv col-12 mt-3 group mt-lg-0 col-lg flex relative h-100 w-100 p-0 justify-center">
           <img src="/images/img3.png" alt="" className=" img-fluid h-100 w-100" />
           <div style={{ transition: 'all 0.3s' }} className=" h-100 w-100 group-hover:bg-black/20  rounded-2xl absolute"></div>
         </div>
       </div>
-      <motion.div className="row my-4" ref={ref} style={{scale: scrollYProgress , display: scrollYProgress}}>
+      <motion.div className="row my-4" ref={ref} style={{scale: scrollYProgress , opacity: scrollYProgress}}>
         <div className=" col-12 col-xl-8 group relative p-0 animatediv">
           <img src="/images/img4.png" alt="" className=" img-fluid h-100 w-100" />
           <div style={{ transition: 'all 0.3s' }} className=" h-100 w-100 group-hover:bg-black/20 rounded-2xl absolute top-0"></div>
