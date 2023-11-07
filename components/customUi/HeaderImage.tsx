@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { BsArrowRight } from 'react-icons/bs';
-import { useScroll, motion } from "framer-motion";
-import { useRef } from 'react';
+import { useScroll, motion, useTransform } from "framer-motion";
+import { useRef } from 'react'; 
 
 const HeaderImage = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -12,6 +12,9 @@ const HeaderImage = () => {
     target: ref,
     offset: ["0 1", "0.8 1"],
   });
+
+  const scaleProgress = useTransform(scrollYProgress, [0,1], [0.9, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0,1], [0, 1]);
 
   return (
     <div className=" container my-5 pt-5">
@@ -29,7 +32,7 @@ const HeaderImage = () => {
           <div style={{ transition: 'all 0.3s' }} className=" h-100 w-100 group-hover:bg-black/20  rounded-2xl absolute"></div>
         </div>
       </div>
-      <div className="row my-4">
+      <motion.div className="row my-4" ref={ref} style={{scale: scaleProgress, opacity: opacityProgress}}>
         <div className=" col-12 col-xl-8 group relative p-0 animatediv">
           <img src="/images/img4.png" alt="" className=" img-fluid h-100 w-100" />
           <div style={{ transition: 'all 0.3s' }} className=" h-100 w-100 group-hover:bg-black/20 rounded-2xl absolute top-0"></div>
@@ -60,7 +63,7 @@ const HeaderImage = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
