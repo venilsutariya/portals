@@ -32,7 +32,7 @@ const HeaderImage = () => {
           <div style={{ transition: 'all 0.3s' }} className=" h-100 w-100 group-hover:bg-black/20  rounded-2xl absolute"></div>
         </div>
       </div>
-      <motion.div className="row my-4" ref={ref} style={{scale: scaleProgress, opacity: opacityProgress}}>
+      <motion.div className="row my-4" ref={ref} style={{scale: scaleProgress}}>
         <div className=" col-12 col-xl-8 group relative p-0 animatediv">
           <img src="/images/img4.png" alt="" className=" img-fluid h-100 w-100" />
           <div style={{ transition: 'all 0.3s' }} className=" h-100 w-100 group-hover:bg-black/20 rounded-2xl absolute top-0"></div>
