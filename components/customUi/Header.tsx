@@ -7,7 +7,7 @@ const Header = () => {
           <div className=" col">
             <div className=" uppercase font-semibold text-1xl inline-block md:ms-16">
               <div>We design and DEVELOP</div>
-              <div className=" text-blue-700">products and experiences</div>
+              <div className=" text-blue-600">products and experiences</div>
               <div>for businesses AND startups.</div>
             </div>
           </div>
