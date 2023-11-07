@@ -39,14 +39,14 @@ const HeaderImage = () => {
           <div className=" flex lg:justify-between items-center mt-5">
             <Link
               href={"/contact"}
-              className="pointer mr-3 lg:mr-3 uppercase flex justify-center items-center hover:bg-opacity-90 no-underline text-white bg-blue-700 rounded-full px-3 py-2 border-0 transition-colors"
+              className="pointer text-sm lg:text-lg mr-3 lg:mr-3 uppercase flex justify-center items-center hover:bg-opacity-90 no-underline text-white bg-blue-700 rounded-full px-3 py-2 border-0 transition-colors"
               style={{ border: "1px solid blue" }}
             >
               <span>contact</span><span className=" ms-2"><BsArrowRight size={22} /></span>
             </Link>
             <Link
               href={"/contact"}
-              className="pointer uppercase flex justify-center items-center no-underline text-black rounded-full px-3 py-2 hover:bg-blue-700/10 transition"
+              className="pointer text-sm lg:text-lg uppercase flex justify-center items-center no-underline text-black rounded-full px-3 py-2 hover:bg-blue-700/10 transition"
               style={{ border: "1px solid blue" }}
             >
               <span className=" font-semibold flex"><span className=" me-2">view</span><span>more</span></span><span className="ms-2"><BsArrowRight size={22} /></span>
