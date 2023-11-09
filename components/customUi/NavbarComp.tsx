@@ -59,7 +59,7 @@ const NavbarComp = () => {
 
       <div className="sticky-top backdrop-blur-lg bg-white/80 px-2 px-md-0">
         <Navbar expand="lg" className=" container">
-          <Navbar.Brand href="/" className=" uppercase fs-3 font-extrabold">
+          <Navbar.Brand href="/" className=" uppercase fs-3 font-extrabold pointer">
             <span className=" inline-block boldfont">portals</span>
             <span className=" text-blue-700 inline-block">
               <BsSquareFill size={5} />
