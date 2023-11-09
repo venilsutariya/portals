@@ -95,10 +95,9 @@ const HeaderImage = () => {
       <div className=" w-50 flex justify-start mb-24">
         <Link
           href={"/contact"}
-          className="pointer uppercase no-underline text-black rounded-full px-3 py-2 hover:bg-blue-600/5 transition-colors"
-          style={{ border: "1px solid blue" }}
+          className="pointer uppercase no-underline text-black rounded-full hover:bg-blue-600/5 transition-colors"
         >
-          view all work
+          <img src="/images/Frame 2.png" alt="" />
         </Link>
       </div>
       <div className="row">
