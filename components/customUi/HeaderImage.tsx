@@ -23,6 +23,7 @@ const HeaderImage = () => {
           <img
             src="/images/img1.png"
             alt=""
+            style={{ transition: 'all 0.3s ease-in-out'}}
             className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
           />
         </div>
@@ -30,6 +31,7 @@ const HeaderImage = () => {
           <img
             src="/images/img2.png"
             alt=""
+            style={{ transition: 'all 0.3s ease-in-out'}}
             className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
           />
         </div>
@@ -37,6 +39,7 @@ const HeaderImage = () => {
           <img
             src="/images/img3.png"
             alt=""
+            style={{ transition: 'all 0.3s ease-in-out'}}
             className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
           />
           
@@ -47,6 +50,7 @@ const HeaderImage = () => {
           <img
             src="/images/newimg.png"
             alt=""
+            style={{ transition: 'all 0.3s ease-in-out'}}
             className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
           />
         </div>
@@ -56,6 +60,7 @@ const HeaderImage = () => {
               <img
                 src="/images/newimg2.png"
                 alt=""
+                style={{ transition: 'all 0.3s ease-in-out'}}
                 className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
               />
             </div>
@@ -63,6 +68,7 @@ const HeaderImage = () => {
               <img
                 src="/images/blockchain.png"
                 alt=""
+                style={{ transition: 'all 0.3s ease-in-out'}}
                 className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
               />
             </div>
