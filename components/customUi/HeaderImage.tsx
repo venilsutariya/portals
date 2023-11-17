@@ -23,34 +23,23 @@ const HeaderImage = () => {
           <img
             src="/images/img1.png"
             alt=""
-            className="img-fluid h-100 w-100"
+            className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
           />
-          <div
-            style={{ transition: "all 0.5s ease-out" }}
-            className="hidden xl:block h-100 w-100 group-hover:bg-black/20  rounded-2xl absolute"
-          ></div>
         </div>
         <div className="col-12 mt-3 transition group mt-lg-0 col-lg flex relative h-100 w-100 p-0 justify-center">
           <img
             src="/images/img2.png"
             alt=""
-            className=" img-fluid h-100 w-100"
+            className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
           />
-          <div
-            style={{ transition: "all 0.5s ease-out" }}
-            className="hidden xl:block h-100 w-100 group-hover:bg-black/20  rounded-2xl absolute"
-          ></div>
         </div>
         <div className="col-12 mt-3 transition group mt-lg-0 col-lg flex relative h-100 w-100 p-0 justify-center">
           <img
             src="/images/img3.png"
             alt=""
-            className=" img-fluid h-100 w-100"
+            className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
           />
-          <div
-            style={{ transition: "all 0.5s ease-out" }}
-            className="hidden xl:block h-100 w-100 group-hover:bg-black/20  rounded-2xl absolute"
-          ></div>
+          
         </div>
       </div>
       <motion.div className="row p-1 my-4 gap-3" ref={ref} style={{scale: scaleProgress}}>
@@ -58,12 +47,8 @@ const HeaderImage = () => {
           <img
             src="/images/newimg.png"
             alt=""
-            className=" img-fluid h-100 w-100"
+            className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
           />
-          <div
-            style={{ transition: "all 0.5s ease-out", borderRadius: "33px" }}
-            className="hidden xl:block h-100 w-100 group-hover:bg-black/20 absolute top-0 mediaimage"
-          ></div>
         </div>
         <div className="col">
           <div className="row gap-3 p-4 p-lg-0">
@@ -71,23 +56,15 @@ const HeaderImage = () => {
               <img
                 src="/images/newimg2.png"
                 alt=""
-                className=" img-fluid h-100 w-100"
+                className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
               />
-              <div
-                style={{ transition: "all 0.5s ease-out" }}
-                className=" hidden xl:block h-100 w-100 rounded-2xl group-hover:bg-black/20 absolute top-0"
-              ></div>
             </div>
             <div className=" col-12 relative group p-0">
               <img
                 src="/images/blockchain.png"
                 alt=""
-                className=" img-fluid h-100 w-100"
+                className="img-fluid h-100 w-100 filter hover:brightness-90 transition-all"
               />
-              <div
-                style={{ transition: "all 0.5s ease-out" }}
-                className=" hidden xl:block h-100 w-100 rounded-2xl group-hover:bg-black/20 absolute top-0"
-              ></div>
             </div>
           </div>
         </div>
