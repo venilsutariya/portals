@@ -1,5 +1,6 @@
 import Client from '@/components/customUi/Client'
 import HeadMain from '@/components/customUi/HeadMain'
+import ScrollSlider from '@/components/customUi/ScrollSlider'
 import Image from 'next/image'
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div>
       <HeadMain />
       <Client />
+      <ScrollSlider />
     </div>
   )
 }
