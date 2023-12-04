@@ -14,7 +14,7 @@ const HeadMain = () => {
                 <span>The Only <span className="" style={{ color: '#C77DFF' }}>Design & Development </span></span> <span className="lg:text-5xl text-2xl">service you will ever need</span>
               </div>
               <p className=" text-white mt-3 font-bold text-lg px-4 md:p-0">Design & development plans for creators who want a no-BS edge.</p>
-              <div className="mt-3">
+              <div className="mt-5">
                 <button className=" text-white font-semibold text-2xl border-1 border-violet-600/30 rounded-full px-4 py-2 bg-violet-600/10">View plans</button>
               </div>
             </div>
