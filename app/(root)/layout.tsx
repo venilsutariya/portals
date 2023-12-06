@@ -7,7 +7,9 @@ const RootLayout = ({
 }) => {
     return ( 
         <div className="">
+            <div className=" sticky top-0  z-50">
             <NavbarComp />
+            </div>
             {children}
         </div>
      );        
