@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Link, Element, scroller } from 'react-scroll';
+import { Element, scroller } from 'react-scroll';
 
 const ScrollSlider = () => {
   const sliderArr = [
@@ -40,7 +40,7 @@ const ScrollSlider = () => {
             </div>
             <div className="col flex flex-col justify-center justify-md-center px-5">
               <div className="px-5 mt-4">
-                <h1>{slide.mainCon}</h1>
+                <h1 style={{fontSize: '40px'}}>{slide.mainCon}</h1>
                 <p className='text-black text-xl'>{slide.subCon}</p>
               </div>
             </div>
