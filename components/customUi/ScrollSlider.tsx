@@ -1,9 +1,9 @@
 "use client";
 
 import React from 'react';
+import { Link, Element, scroller } from 'react-scroll';
 
 const ScrollSlider = () => {
-
   const sliderArr = [
     {
       image: '/images/slide1.png',
@@ -22,22 +22,29 @@ const ScrollSlider = () => {
     },
   ];
 
+  const scrollToSlide = (index: number) => {
+    scroller.scrollTo(`slide-${index}`, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+    });
+  };
 
   return (
     <div className=''>
-      <div className="container my-5 py-5 relative" style={{scrollBehavior: 'smooth'}}>
+      <div className="container my-5 py-5 relative">
         {sliderArr.map((slide, index) => (
-          <div key={index}  className={`row row-cols-1 row-cols-lg-2 backdrop-blur-lg sticky top-0 h-[100vh] py-3`} style={{backgroundColor: '#f5f5f5'}}>
+          <Element key={index} name={`slide-${index}`} className={`row row-cols-1 row-cols-lg-2 backdrop-blur-lg sticky top-0 h-[100vh] py-3`} style={{ backgroundColor: '#f5f5f5', willChange: 'transform' }}>
             <div className="col flex justify-center items-center">
               <img src={slide.image} alt="" />
             </div>
             <div className="col flex flex-col justify-center justify-md-center px-5">
               <div className="px-5 mt-4">
                 <h1>{slide.mainCon}</h1>
-                <p className=' text-black text-xl'>{slide.subCon}</p>
+                <p className='text-black text-xl'>{slide.subCon}</p>
               </div>
             </div>
-          </div>
+          </Element>
         ))}
       </div>
     </div>
