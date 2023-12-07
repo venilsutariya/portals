@@ -8,10 +8,10 @@ const HeadMain = () => {
     <>
       <div className="bgmainimg">
         <div className=" flex flex-col justify-center items-center h-full text-center">
-          <h1 className=" xl:text-7xl lg:text-6xl md:text-5xl flex flex-col gap-y-3">
-            <span>The only <span className=" bg-gradient-to-tr from-violet-500 via-purple-700 to-pink-500 bg-clip-text text-transparent">Design & Development </span></span>
-            <span>service you will ever need</span>
-          </h1>
+          <div className=" xl:text-7xl lg:text-6xl md:text-5xl text-4xl flex flex-col gap-y-3">
+            <span>The only <span className="" style={{color: '#3613CC'}}>Design & Development </span></span>
+            <span className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl">service you will ever need</span>
+          </div>
           <p className=" mt-4 xl:text-2xl md:text-xl px-3 flex flex-col" style={{ color: '#000' }}>
             <span>Unlock endless possibilities with just one plan,</span>
             <span>Design & development plans for creators who want a no-BS edge.</span>

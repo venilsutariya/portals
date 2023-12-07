@@ -17,7 +17,7 @@ import {
 const NavbarComp = () => {
     return (
         <>
-            <Navbar expand="lg" className=" px-5 backdrop-blur-lg">
+            <Navbar expand="lg" className=" px-5 ">
                 <Navbar.Brand href="#home" className=' text-black font-bold ms-0 ms-lg-5' style={{ fontSize: '30px'}}>PORTALS.</Navbar.Brand>
                 <>
                     <Sheet>

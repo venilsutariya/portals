@@ -32,14 +32,14 @@ const ScrollSlider = () => {
 
   return (
     <div className=''>
-      <div className="container my-5 py-5 relative">
+      <div className="container relative">
         {sliderArr.map((slide, index) => (
           <Element key={index} name={`slide-${index}`} className={`row row-cols-1 row-cols-lg-2 backdrop-blur-lg sticky top-0 h-[100vh] py-3`} style={{ backgroundColor: '#f5f5f5', willChange: 'transform' }}>
             <div className="col flex justify-center items-center">
               <img src={slide.image} alt="" />
             </div>
             <div className="col flex flex-col justify-center justify-md-center px-5">
-              <div className="px-5 mt-4">
+              <div className="px-0 px-lg-5 mt-4">
                 <h1 style={{fontSize: '40px'}}>{slide.mainCon}</h1>
                 <p className='text-black text-xl'>{slide.subCon}</p>
               </div>
