@@ -6,7 +6,7 @@ import { MdChevronRight } from "react-icons/md";
 
 const Plans = () => {
     return (
-        <div className="px-16 pb-28 bg-white">
+        <div className="px-16 pb-28 bg-white d-none d-lg-block">
             <div className=" py-28 text-4xl font-semibold">
                 <div className=" flex flex-col"><span>Flexible plans for</span>
                     <span>every use case</span></div>
