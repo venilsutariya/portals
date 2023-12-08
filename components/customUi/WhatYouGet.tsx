@@ -8,7 +8,7 @@ const WhatYouGet = () => {
                         you will get ?
                     </div>
                 </div>
-                <div className=" col flex lg:justify-end w-full">
+                <div className=" col flex justify-end w-full">
                     <div className=" text-2xl text-black lg:flex lg:flex-col">
                         <div className="">We will provide many things, but here</div> 
                         <div className="">are some things at we excel most.</div>
