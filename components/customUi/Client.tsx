@@ -1,8 +1,7 @@
 const Client = () => {
     return (
         <>
-            <div className="text-center py-5 border-0">
-                <div className=" uppercase font-semibold text-2xl text-black/80 mb-5"><span className=" me-3">T R U S T E D</span><span>B Y</span></div>
+            <div className="text-center pb-5 border-0" style={{backgroundColor: '#000212'}}>
                 <div className=" py-5 container">
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-5 gap-y-5">
                         <div className="col flex justify-center mb-5 mb-lg-0">

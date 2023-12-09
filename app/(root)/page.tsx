@@ -6,6 +6,7 @@ import Project from '@/components/customUi/Project'
 import ScrollSlider from '@/components/customUi/ScrollSlider'
 import Technologies from '@/components/customUi/Technologies'
 import WhatYouGet from '@/components/customUi/WhatYouGet'
+import WhyChoose from '@/components/customUi/WhyChoose'
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
         <WhatYouGet />
         <Cards />
         <Technologies />
-        <Plans />
+        <WhyChoose />
+        {/* <Plans /> */}
     </div>
   )
 }

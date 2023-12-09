@@ -17,30 +17,30 @@ import {
 const NavbarComp = () => {
     return (
         <>
-            <Navbar expand="lg" className=" px-lg-5 px-2">
-                <Navbar.Brand href="#home" className=' text-black font-bold ms-0 ms-lg-5' style={{ fontSize: '30px'}}>PORTALS.</Navbar.Brand>
+            <Navbar expand="lg" className=" px-lg-5 px-4 pt-4">
+                    <Navbar.Brand href="#home" className=' ms-0 ms-lg-5 text-white' style={{ fontSize: '27px', fontWeight: '600'}}>Portals<span style={{color: '#5E6AD2'}}>.</span></Navbar.Brand>
                 <>
                     <Sheet>
-                        <SheetTrigger><CgMenuRight className=" d-block d-lg-none" size={30} /></SheetTrigger>
+                        <SheetTrigger><CgMenuRight className=" d-block d-lg-none" color={'#fff'} size={30} /></SheetTrigger>
                         <SheetContent>
                             <SheetHeader>
-                                <SheetTitle className=' mb-5'>PORTALS.</SheetTitle>
+                                <SheetTitle className=' mb-5 text-white'>Portals<span style={{color: '#5E6AD2'}}>.</span></SheetTitle>
                                 <SheetDescription>
-                                    <div className=' mb-3'><Link href="/work" className=' text-gray-700 hover:text-black transition me-5 no-underline'><SheetClose>Work</SheetClose></Link></div>
-                                    <div className=' mb-3'><Link href="/howitworks" className=' text-gray-700 hover:text-black transition me-5 no-underline'><SheetClose>How it works</SheetClose></Link></div>
-                                    <div className=' mb-3'><Link href="/plans" className=' text-gray-700 hover:text-black transition me-5 no-underline'><SheetClose>Plans</SheetClose></Link></div>
-                                    <div className=' mb-3'><Link href="/usecases" className=' text-gray-700 hover:text-black transition me-5 no-underline'><SheetClose>Usecases</SheetClose></Link></div>
+                                    <div className=' mb-3'><Link href="/work" className=' text-sm text-gray-300 hover:text-white transition me-5 no-underline'><SheetClose>Work</SheetClose></Link></div>
+                                    <div className=' mb-3'><Link href="/howitworks" className='text-sm text-gray-300 hover:text-white transition me-5 no-underline'><SheetClose>How it works</SheetClose></Link></div>
+                                    <div className=' mb-3'><Link href="/plans" className='text-sm text-gray-300 hover:text-white transition me-5 no-underline'><SheetClose>Plans</SheetClose></Link></div>
+                                    <div className=' mb-3'><Link href="/usecases" className='text-sm text-gray-300 hover:text-white transition me-5 no-underline'><SheetClose>Usecases</SheetClose></Link></div>
                                 </SheetDescription>
                             </SheetHeader>
                         </SheetContent>
                     </Sheet>
                 </>
                 <Navbar.Collapse id="basic-navbar-nav" className=' me-0 me-lg-5'>
-                    <Nav className="ms-auto" style={{ fontSize: '19px' }}>
-                        <Link href="/work" className='text-black me-5 no-underline'>Work</Link>
-                        <Link href="/howitworks" className='text-black me-5 no-underline'>How it works</Link>
-                        <Link href="/plans" className='text-black me-5 no-underline'>Plans</Link>
-                        <Link href="/usecases" className='text-black no-underline'>Usecases</Link>
+                    <Nav className="ms-auto" style={{ fontSize: '17px' }}>
+                        <Link href="/work" className=' me-5 no-underline' style={{color: '#B4BCD0'}}>Work</Link>
+                        <Link href="/howitworks" className=' me-5 no-underline' style={{color: '#B4BCD0'}}>How it works</Link>
+                        <Link href="/plans" className=' me-5 no-underline' style={{color: '#B4BCD0'}}>Plans</Link>
+                        <Link href="/usecases" className=' no-underline' style={{color: '#B4BCD0'}}>Usecases</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

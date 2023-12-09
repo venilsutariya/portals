@@ -6,8 +6,10 @@ const RootLayout = ({
     children: React.ReactNode
 }) => {
     return ( 
-        <div className="">
+        <div className=" relative">
+            <div className="absolute w-full">
             <NavbarComp />
+            </div>
             {children}
         </div>
      );        

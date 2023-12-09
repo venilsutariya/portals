@@ -5,12 +5,18 @@
 html,
 body {
   height: 100%;
-  background-color: #f5f5f5 !important;
+  background-color: #000212;
+}
+
+.headmain {
+  background: 
+  linear-gradient(33.33deg,#19142e00, #201a3700, #20184400, #19142e)
 }
 
 .bgmainimg {
-  background-image: url('../public/images/Vector.png');
-  background-size: contain;
+  background-image: url('../public/images/background\ image.png');
+  background-size:cover;
+  background-position: center center;
   height: 600px;
   width: 100%;
 }

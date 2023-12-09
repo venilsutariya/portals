@@ -1,6 +1,6 @@
 const Technologies = () => {
     return ( 
-        <div className=" bg-black py-36 mt-24">
+        <div className=" pb-36" style={{backgroundColor: '#000212'}}>
             <div className=" row p-0 g-0">
                 <div className="col-12 col-lg-3 ps-5 flex justify-start">
                     <div className=" text-4xl text-white">
