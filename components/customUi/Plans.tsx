@@ -66,7 +66,7 @@ const Plans = () => {
                                             <span className=" text-4xl">$1,800</span> /month
                                         </div>
                                         <p className=" text-gray-500">Billed quarterly</p>
-                                        <button style={{ borderRadius: '5px', margin: '10px 0px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
+                                        <button style={{ borderRadius: '5px', margin: '20px 0px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
                                             <span>Get  started</span>
                                             <span className=" ms-1"><MdChevronRight /></span>
                                         </button>
