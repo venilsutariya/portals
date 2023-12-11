@@ -1,105 +1,94 @@
 "use client";
 
+import { useState, useEffect } from 'react';
+import VisibilitySensor from 'react-visibility-sensor';
 import { IoMdCheckmark } from "react-icons/io";
-import { MdClose } from "react-icons/md";
 import { MdChevronRight } from "react-icons/md";
 
 const Plans = () => {
+    const [isVisible, setIsVisible] = useState<boolean>(false);
+
+    const onVisibilityChange = (visible: boolean) => {
+        if (visible) {
+            setIsVisible(true);
+        }
+    };
+
+    useEffect(() => {
+        // Reset the isVisible state when the component unmounts or when you leave the section
+        return () => {
+            setIsVisible(false);
+        };
+    }, []);
+
     return (
-        <div className="px-16 pb-28 bg-white d-none d-lg-block">
-            <div className=" py-28 text-4xl font-semibold">
-                <div className=" flex flex-col"><span>Flexible plans for</span>
-                    <span>every use case</span></div>
-            </div>
-            <div className=" table-responsive w-[90vw] overflow-auto">
-                <table className=" w-full" >
-                    <thead className="">
-                        <tr>
-                            <td className=" text-4xl pt-5"><span className="">Features</span></td>
-                            <td className=" text-center">
-                                <div className=" text-lg font-semibold mb-1">Monthly Pro</div>
-                                <div className=" text-3xl font-semibold mb-1" style={{ color: '#3613CC' }}>$1,800/m</div>
-                                <div className=" text-lg">Billed monthly</div>
-                            </td>
-                            <td className=" text-center">
-                                <div className=" text-lg font-semibold mb-1">Quarterly Pro</div>
-                                <div className=" text-3xl font-semibold mb-1" style={{ color: '#3613CC' }}>$4,590/m</div>
-                                <div className=" text-lg">Billed quarterly</div>
-                            </td>
-                            <td className=" text-center">
-                                <div className=" text-lg font-semibold mb-1">Custom</div>
-                                <div className=" text-3xl font-semibold mb-1" style={{ color: '#3613CC' }}>Get in touch</div>
-                                <div className=" text-lg">Custom plans</div>
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr className="tr">
-                            <td>Unlimited Requests per account</td>
-                            <td><span className=" flex justify-center "><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                        </tr>
-                        <tr className="tr">
-                            <td>Unlimited revisions</td>
-                            <td><span className=" flex justify-center "><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                        </tr>
-                        <tr className="tr">
-                            <td>Unlimited brands/companies</td>
-                            <td><span className=" flex justify-center "><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                        </tr>
-                        <tr className="tr">
-                            <td>Unlimited users & teams</td>
-                            <td><span className=" flex justify-center "><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                        </tr>
-                        <tr className="tr">
-                            <td>Dedicated designer & developer</td>
-                            <td><span className=" flex justify-center "><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                        </tr>
-                        <tr className="tr">
-                            <td>Slack/Trello communications</td>
-                            <td><span className=" flex justify-center "><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                        </tr>
-                        <tr className="tr">
-                            <td>Save $270 every month</td>
-                            <td><span className=" flex justify-center "><MdClose /></span></td>
-                            <td><span className=" flex justify-center"><IoMdCheckmark /></span></td>
-                            <td><span className=" flex justify-center"><MdClose /></span></td>
-                        </tr>
-                        <tr className="">
-                            <td></td>
-                            <td><span className=" flex justify-center ">
-                                <button style={{ borderRadius: '5px', transition: 'all 0.3s' }} className="border border-black text-md font-light flex justify-center items-center bg-black text-white py-2 px-2 hover:opacity-90">
-                                    <span>Get started</span>
-                                    <span className=" ms-1"><MdChevronRight /></span>
-                                </button>
-                            </span></td>
-                            <td><span className=" flex justify-center">
-                                <button style={{ borderRadius: '5px', transition: 'all 0.3s' }} className="border border-black text-md font-light flex justify-center items-center bg-black text-white py-2 px-2 hover:opacity-90">
-                                    <span>Get started</span>
-                                    <span className=" ms-1"><MdChevronRight /></span>
-                                </button>
-                            </span></td>
-                            <td><span className=" flex justify-center">
-                                <button style={{ borderRadius: '5px', transition: 'all 0.3s' }} className="border border-black text-md font-light flex justify-center items-center text-black py-2 px-4 hover:opacity-90">
-                                    <span>Let&#39;s talk</span>
-                                </button>
-                            </span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        <>
+            <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
+                <div className=" py-5" style={{ backgroundColor: '#000212' }}>
+                    <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} flex flex-col text-center text-white text-4xl pb-24`}>
+                        <div>Flexible plans for</div>
+                        <div className="">every use case</div>
+                    </div>
+                    <div className=" container">
+                        <div className=" row row-col-1 row-cols-lg-2 gap-y-4">
+                            <div className=" col">
+                                <div className=" lg:ps-44">
+                                    <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} bg-white py-5 px-5 rounded-xl`}>
+                                        <div className=" text-xl font-semibold">Essential plan</div>
+                                        <p className=" text-gray-500">Provides you with the most freedom.
+                                            Perfect for testing out the plan.</p>
+                                        <hr />
+                                        <div className=" text-black font-semibold mb-3">
+                                            <span className=" text-4xl">$1,800</span> /month
+                                        </div>
+                                        <p className=" text-gray-500">Billed monthly</p>
+                                        <button style={{ borderRadius: '5px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
+                                            <span>Get  started</span>
+                                            <span className=" ms-1"><MdChevronRight /></span>
+                                        </button>
+                                        <div className=" text-black mt-4 mb-4 font-semibold">What&#39;s included</div>
+                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited revisions</span></p>
+                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited development</span></p>
+                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited brands</span></p>
+                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span>Dedicated designer and developer</span></p>
+                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span>Slack/Trello channel</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className=" col">
+                                <div className=" lg:pe-44">
+                                    <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} bg-transparent border py-5 px-5 rounded-xl`}>
+                                        <div className=" text-xl text-white font-semibold">Essential quarterly plan</div>
+                                        <p className=" text-gray-500">Best plan for longer projects
+                                           <br /> with extra discount.</p>
+                                        <hr className=' text-white'/>
+                                        <div className=" text-white font-semibold mb-3">
+                                            <span className=" text-4xl">$1,800</span> /month
+                                        </div>
+                                        <p className=" text-gray-500">Billed quarterly</p>
+                                        <button style={{ borderRadius: '5px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
+                                            <span>Get  started</span>
+                                            <span className=" ms-1"><MdChevronRight /></span>
+                                        </button>
+                                        <div className=" text-white mt-4 mb-4 font-medium">What&#39;s included</div>
+                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited revisions</span></p>
+                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited development</span></p>
+                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited brands</span></p>
+                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Dedicated designer and developer</span></p>
+                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Slack/Trello channel</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="lg:px-32 mb-5 mt-24">
+                            <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent lg:p-[0.1px] xl:p-[0.3px]  my-10 relative text-center">
+                                <span style={{backgroundColor: '#000212', color: 'rgba(180, 188, 208, 1)'}} className=' absolute px-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl'>or</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </VisibilitySensor>
+        </>
     );
 }
 

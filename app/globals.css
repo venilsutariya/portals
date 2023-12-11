@@ -10,13 +10,14 @@ body {
 
 .headmain {
   background: 
-  linear-gradient(33.33deg,#19142e00, #201a3700, #20184400, #19142e)
+  linear-gradient(45deg,#19142e00, #201a3710, #231a4a00, #19142eb9);
 }
 
 .bgmainimg {
   background-image: url('../public/images/background\ image.png');
-  background-size:cover;
+  background-size:contain;
   background-position: center center;
+  background-repeat: no-repeat;
   height: 600px;
   width: 100%;
 }
@@ -27,4 +28,25 @@ body {
 
 td {
   padding: 15px 0px;
+}
+
+.animatediv {
+  animation: fontanimation 1s ease-in-out;
+  transform: translateY(0px);
+}
+
+@keyframes fontanimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.whychoose {
+  background: 
+  linear-gradient(0deg,#19142e00, #201a372c, #231a4a21, #19142e00);
 }
