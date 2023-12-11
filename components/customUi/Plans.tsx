@@ -37,12 +37,12 @@ const Plans = () => {
                                         <div className=" text-xl font-semibold">Essential plan</div>
                                         <p className=" text-gray-500">Provides you with the most freedom.
                                             Perfect for testing out the plan.</p>
-                                        <hr />
-                                        <div className=" text-black font-semibold mb-3">
+                                        <hr className=' my-3'/>
+                                        <div className=" text-black font-semibold mb-10">
                                             <span className=" text-4xl">$1,800</span> /month
                                         </div>
                                         <p className=" text-gray-500">Billed monthly</p>
-                                        <button style={{ borderRadius: '5px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
+                                        <button style={{ borderRadius: '5px', margin: '10px 0px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
                                             <span>Get  started</span>
                                             <span className=" ms-1"><MdChevronRight /></span>
                                         </button>
@@ -58,24 +58,24 @@ const Plans = () => {
                             <div className=" col">
                                 <div className=" lg:pe-44">
                                     <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} bg-transparent border py-5 px-5 rounded-xl`}>
-                                        <div className=" text-xl text-white font-semibold">Essential quarterly plan</div>
+                                        <div className=" text-xl text-white font-medium">Essential quarterly plan</div>
                                         <p className=" text-gray-500">Best plan for longer projects
                                            <br /> with extra discount.</p>
-                                        <hr className=' text-white'/>
-                                        <div className=" text-white font-semibold mb-3">
+                                        <hr className=' text-white my-3'/>
+                                        <div className=" text-white font-semibold mb-10">
                                             <span className=" text-4xl">$1,800</span> /month
                                         </div>
                                         <p className=" text-gray-500">Billed quarterly</p>
-                                        <button style={{ borderRadius: '5px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
+                                        <button style={{ borderRadius: '5px', margin: '10px 0px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
                                             <span>Get  started</span>
                                             <span className=" ms-1"><MdChevronRight /></span>
                                         </button>
                                         <div className=" text-white mt-4 mb-4 font-medium">What&#39;s included</div>
-                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited revisions</span></p>
-                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited development</span></p>
-                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited brands</span></p>
-                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Dedicated designer and developer</span></p>
-                                        <p className=" flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Slack/Trello channel</span></p>
+                                        <p className=" flex gap-x-2 mb-3"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited revisions</span></p>
+                                        <p className=" flex gap-x-2 mb-3"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited development</span></p>
+                                        <p className=" flex gap-x-2 mb-3"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited brands</span></p>
+                                        <p className=" flex gap-x-2 mb-3"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Dedicated designer and developer</span></p>
+                                        <p className=" flex gap-x-2 mb-3"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Slack/Trello channel</span></p>
                                     </div>
                                 </div>
                             </div>
