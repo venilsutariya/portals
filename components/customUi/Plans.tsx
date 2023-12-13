@@ -33,7 +33,7 @@ const Plans = () => {
                         <div className=" row row-col-1 row-cols-lg-2 gap-y-4">
                             <div className=" col">
                                 <div className=" lg:ps-44">
-                                    <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} bg-white py-5 px-5 rounded-xl`}>
+                                    <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} bg-white py-5 px-5 rounded-xl border-1`}>
                                         <div className=" text-xl font-semibold">Essential plan</div>
                                         <p className=" text-gray-500">Provides you with the most freedom.
                                             Perfect for testing out the plan.</p>
@@ -62,8 +62,8 @@ const Plans = () => {
                                         <p className=" text-gray-500">Best plan for longer projects
                                            <br /> with extra discount.</p>
                                         <hr className=' text-white my-3'/>
-                                        <div className=" text-white font-semibold mb-2">
-                                            <span className=" text-4xl">$1,800</span> /month
+                                        <div className=" text-white mb-2">
+                                            <span className=" text-4xl">$1,530</span> /month
                                         </div>
                                         <p className=" text-gray-500">Billed quarterly</p>
                                         <button style={{ borderRadius: '5px', margin: '20px 0px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
