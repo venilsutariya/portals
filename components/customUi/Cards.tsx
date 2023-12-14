@@ -24,7 +24,7 @@ const Cards = () => {
                 <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                     <div className="row row-cols-1 row-cols-lg-3 p-0 g-0">
                         <div className=" col px-5 flex justify-center">
-                            <div className=" px-lg-5">
+                            <div className=" px-2 px-lg-5">
                                 <div className="">
                                     <img src="/images/card1.png" alt="" />
                                 </div>
@@ -33,7 +33,7 @@ const Cards = () => {
                             </div>
                         </div>
                         <div className=" col px-5 flex justify-center">
-                            <div className=" px-lg-4">
+                            <div className="px-2 px-lg-4">
                                 <div>
                                     <img src="/images/card2.png" alt="" />
                                 </div>
@@ -42,7 +42,7 @@ const Cards = () => {
                             </div>
                         </div>
                         <div className=" col px-5">
-                            <div className="px-lg-4 px-lg-3">
+                            <div className=" px-2 px-lg-4 px-lg-3">
                                 <div>
                                     <img src="/images/card3.png" alt="" />
                                 </div>

@@ -49,7 +49,7 @@ const ScrollSlider = () => {
                         Subscribe and get started.
                       </h1>
                       <p className="text-xl" style={{ color: "#B4BCD0" }}>
-                        Pay and get started on the same day, we won't waste your
+                        Pay and get started on the same day, we won&#39;t waste your
                         time and will start fulfilling your request.
                       </p>
                     </div>
@@ -114,7 +114,7 @@ const ScrollSlider = () => {
                         Unlimited revisions
                       </h1>
                       <p className="text-xl" style={{ color: "#B4BCD0" }}>
-                        We've got you covered. We will make sure that you get
+                        We&#39;ve got you covered. We will make sure that you get
                         what you want from us.
                       </p>
                     </div>
