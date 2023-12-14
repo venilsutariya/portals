@@ -17,16 +17,16 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   background-color: #333; /* Thumb color */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 0px; /* Rounded corners */
 }
 
 .headmain {
   background: linear-gradient(
     45deg,
     #19142e00,
-    #201a3710,
+    #201a3700,
     #231a4a00,
-    #19142eb9
+    #19142e56
   );
 }
 
@@ -67,4 +67,28 @@ section {
 
 .whychoose {
   background: linear-gradient(0deg, #19142e00, #201a372c, #231a4a21, #19142e00);
+}
+
+/* for scroll component */
+.maincontainer {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+.animation {
+  animation: headanimation 1s ease-in-out;
+}
+@keyframes headanimation {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

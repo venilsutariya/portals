@@ -9,8 +9,8 @@ const HeadMain = () => {
       <div className=" headmain h-[100vh] flex justify-center">
         <div className="bgmainimg text-white">
           <div className=" flex flex-col justify-center items-center h-full text-center">
-            <div className="py-1 px-3 rounded-full mb-3" style={{ backgroundColor: 'rgba(180, 188, 208, 0.45)', color: '#fff' }}>3 slot open</div>
-            <div className="xl:text-6xl lg:text-6xl md:text-5xl text-4xl flex flex-col gap-y-3">
+            <div className="py-1 px-3 rounded-full mb-3" style={{ backgroundColor: 'rgba(180, 188, 208, 0.45)', color: '#fff' }}>3 spots remaining</div>
+            <div className="animation xl:text-6xl lg:text-6xl md:text-5xl text-4xl flex flex-col gap-y-3">
               <span>The only <span className="">Design & Development </span></span>
               <span className="xl:text-6xl lg:text-6xl md:text-5xl text-3xl">service you will ever need</span>
             </div>

@@ -12,6 +12,7 @@ import WhyChoose from '@/components/customUi/WhyChoose'
 import 'animate.css/animate.min.css';
 
 export default function Home() {
+
   return (
     <div>
         <HeadMain />
