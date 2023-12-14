@@ -1,5 +1,6 @@
 import Cards from '@/components/customUi/Cards'
 import Client from '@/components/customUi/Client'
+import FAQ from '@/components/customUi/FAQ'
 import FormComp from '@/components/customUi/FormComp'
 import HeadMain from '@/components/customUi/HeadMain'
 import Plans from '@/components/customUi/Plans'
@@ -23,6 +24,7 @@ export default function Home() {
         <WhyChoose />
         <Plans />
         <FormComp />
+        <FAQ />
     </div>
   )
 }
