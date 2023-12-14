@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { Element, Link, animateScroll as scroll } from "react-scroll";
+import React, { useState } from "react";
+import { Element } from "react-scroll";
 import VisibilitySensor from "react-visibility-sensor";
-import ScrollReveal from "scrollreveal";
 
 const ScrollSlider = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,20 +12,6 @@ const ScrollSlider = () => {
       setIsVisible(true);
     }
   };
-
-  useEffect(() => {
-    let slideUp = {
-      distance: "10%",
-      origin: "center",
-      delay: 500,
-      duration: 700,
-      easing: "ease",
-      opacity: 0,
-      reset: false,
-    };
-
-    ScrollReveal().reveal(".slide-up", slideUp);
-  }, []);
 
   return (
     <>
