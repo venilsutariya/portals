@@ -31,7 +31,7 @@ const FormComp = () => {
                         <div className=" absolute text-white top-20 px-3 px-lg-0 lg:left-44 text-lg">We are Portals and we are here to serve you :)</div>
                     </div>
                     <div className={` col relative ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
-                        <div className="absolute top-20 w-full lg:pe-44 px-3 px-lg-0">
+                        <div className="lg:absolute top-20 w-full lg:pe-44 px-3 px-lg-0">
                             <form className="">
                                 <div className="flex flex-col">
                                     <label className=" mb-3" style={{ color: 'rgba(180, 188, 208, 1)' }} htmlFor="name">NAME(*)</label>

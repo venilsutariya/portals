@@ -10,7 +10,7 @@ import {
 const FAQ = () => {
     return (
         <div>
-            <div className="lg:px-32 mb-5 mt-24 py-5">
+            <div className=" d-none d-lg-block px-32 mb-5 mt-24 py-5">
                 <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent lg:p-[0.1px] xl:p-[0.3px]  my-10 relative text-center">
                 </div>
             </div>
@@ -23,7 +23,7 @@ const FAQ = () => {
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
                                 Hiring a senior-level designer and developer can cost up to six figures per year (plus benefits!), which may not be feasible for your budget or stage of business. You could find a cheaper alternative on Fiverr, but why take that chance?
                                 <br /> <br />
-                                Furthermore, you may not always have enough design work to keep a full-time designer busy, forcing you to pay for downtime. You can pause and resume your service as needed with a subscription plan, ensuring that you only pay for design work when you have a project that requires it. That's a win-win situation.
+                                Furthermore, you may not always have enough design work to keep a full-time designer busy, forcing you to pay for downtime. You can pause and resume your service as needed with a subscription plan, ensuring that you only pay for design work when you have a project that requires it. That&#39;s a win-win situation.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
