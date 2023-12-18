@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html,
 body {
   height: 100%;
@@ -9,25 +10,10 @@ body {
   margin: 0;
 }
 
-/* scroll bar */
-body::-webkit-scrollbar {
-  width: 10px; /* Scrollbar width */
-  background-color: #222; /* Track color */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #333; /* Thumb color */
-  border-radius: 0px; /* Rounded corners */
-}
-
 .headmain {
-  background: linear-gradient(
-    45deg,
-    #19142e00,
-    #201a3700,
-    #231a4a00,
-    #19142e56
-  );
+  background: linear-gradient(220deg, #19142e94, #201a3700, #201a3700, #201a3700),
+    linear-gradient(-220deg, #19142e7f, #201a3700, #201a3700,#201a3700);
+  background-blend-mode: normal;
 }
 
 .bgmainimg {
@@ -61,10 +47,6 @@ section {
   transition: 0.5s ease;
 }
 
-.animation:hover {
-  transform: translateY(-8px);
-}
-
 .whychoose {
   background: linear-gradient(0deg, #19142e00, #201a372c, #231a4a21, #19142e00);
 }
@@ -80,15 +62,33 @@ section {
 }
 
 .animation {
+  animation: headanimation 0.8s ease-in-out;
+}
+.animation2 {
   animation: headanimation 1s ease-in-out;
+}
+
+.slotanimation {
+  animation: topanimation 1s ease-in-out;
 }
 @keyframes headanimation {
   0% {
-    transform: scale(0.7);
+    transform: translateY(50px);
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes topanimation {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }

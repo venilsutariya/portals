@@ -1,21 +1,37 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import VisibilitySensor from "react-visibility-sensor";
 
 const ScrollSlider = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   const onVisibilityChange = (visible: boolean) => {
-    if (visible) {
+    if (!isMounted && visible) {
+      setIsMounted(true);
+      setIsVisible(true);
+    } else if (visible) {
       setIsVisible(true);
     }
   };
+
+  useEffect(() => {
+    if (isVisible) {
+      // Scroll to the top of the component
+      window.scrollTo({
+        // @ts-ignore
+        top: document.querySelector(".maincontainer").offsetTop,
+        behavior: "smooth",
+      });
+    }
+  }, [isVisible]);
 
   return (
     <>
       <div className="maincontainer h-[100vh] scrollbar-hide" style={{ backgroundColor: "#000212" }}>
         <div className="container relative">
+          {/* Section 1 */}
           <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
             <section>
               <div className="one">
@@ -33,11 +49,12 @@ const ScrollSlider = () => {
                           Subscribe and get started.
                         </h1>
                         <p className="text-xl" style={{ color: "#B4BCD0" }}>
-                          Pay and get started on the same day, we won&#39;t waste your
-                          time and will start fulfilling your request.
+                          Pay and get started on same day, we
+                          won&#39;t waste your time and will start
+                          fulfilling your request.
                         </p>
                       </div>
-                      <div className="absolute right-3">
+                      <div className="absolute right-3 d-none d-lg-block">
                         <div className="h-[100px] w-[1px] bg-white mb-2"></div>
                         <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
                         <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
@@ -49,6 +66,7 @@ const ScrollSlider = () => {
             </section>
           </VisibilitySensor>
 
+          {/* Section 2 */}
           <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
             <section>
               <div className="two">
@@ -64,14 +82,16 @@ const ScrollSlider = () => {
                     <div className="col flex flex-col justify-center items-center">
                       <div className="lg:px-20 lg:mt-[-40px] animate__animated animate__slideInUp">
                         <h1 className="text-white" style={{ fontSize: "40px" }}>
-                          Get updated on process through Trello.
+                          Get updated on
+                          process.
                         </h1>
                         <p className="text-xl" style={{ color: "#B4BCD0" }}>
-                          You will be notified about tasks and processes through
-                          Trello. Most of the time, the turnaround time is 1-3 days.
+                          You will notified about Task and process
+                          through Trello, Most of time turn around
+                          time is 1-3 days.
                         </p>
                       </div>
-                      <div className="absolute right-5">
+                      <div className="absolute right-5 d-none d-lg-block">
                         <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
                         <div className="h-[100px] w-[1px] bg-white mb-2"></div>
                         <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
@@ -83,6 +103,7 @@ const ScrollSlider = () => {
             </section>
           </VisibilitySensor>
 
+          {/* Section 3 */}
           <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
             <section>
               <div className="three">
@@ -100,11 +121,11 @@ const ScrollSlider = () => {
                           Unlimited revisions
                         </h1>
                         <p className="text-xl" style={{ color: "#B4BCD0" }}>
-                          We&#39;ve got you covered. We will make sure that you get
-                          what you want from us.
+                          We got you, We will make sure that
+                          you get what you want from us.
                         </p>
                       </div>
-                      <div className="absolute right-3">
+                      <div className="absolute right-3 d-none d-lg-block">
                         <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
                         <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
                         <div className="h-[100px] w-[1px] bg-white mb-2"></div>

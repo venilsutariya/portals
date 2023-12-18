@@ -24,26 +24,26 @@ const Project = () => {
         <div className="mx-auto" style={{ backgroundColor: '#000212' }}>
             <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
                 <div className={`row mb-5 gap-y-5 p-0 g-0 ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
-                    <div className="col-12 col-lg">
+                    <div className="col-12 col-lg px-2">
                         <img src="/images/project1.png" className="img-fluid" alt="" />
                     </div>
-                    <div className="col-12 col-lg-5 flex justify-center">
+                    <div className="col-12 col-lg-5 flex justify-center px-2">
                         <img src="/images/project2.png" className=" img-fluid" alt="" />
                     </div>
-                    <div className="col-12 col-lg flex justify-end">
+                    <div className="col-12 col-lg flex justify-end px-2">
                         <img src="/images/project3.png" className="img-fluid" alt="" />
                     </div>
                 </div>
             </VisibilitySensor>
             <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
                 <div className={`row gap-y-5 p-0 g-0 ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
-                    <div className="col-12 col-lg animate__animated animate__slideInUp">
+                    <div className="col-12 col-lg animate__animated animate__slideInUp px-2">
                         <img src="/images/project4.png" className="img-fluid" alt="" />
                     </div>
-                    <div className="col-12 col-lg-5 justify-start">
+                    <div className="col-12 col-lg-5 justify-start px-2">
                         <img src="/images/project5.png" className="img-fluid" alt="" />
                     </div>
-                    <div className="col-12 col-lg flex justify-end">
+                    <div className="col-12 col-lg flex justify-end px-2">
                         <img src="/images/project6.png" className="img-fluid" alt="" />
                     </div>
                 </div>

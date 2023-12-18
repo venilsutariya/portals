@@ -31,7 +31,7 @@ const Plans = () => {
                     </div>
                     <div className=" container">
                         <div className=" row row-col-1 row-cols-lg-2 gap-y-4">
-                            <div className=" col">
+                            <div className=" col-12 col-lg-6">
                                 <div className=" lg:ps-44">
                                     <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} bg-white py-5 px-5 rounded-xl border-1`}>
                                         <div className=" text-xl font-semibold">Essential plan</div>
@@ -55,7 +55,7 @@ const Plans = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className=" col">
+                            <div className=" col-12 col-lg-6">
                                 <div className=" lg:pe-44">
                                     <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} bg-transparent border py-5 px-5 rounded-xl`}>
                                         <div className=" text-xl text-white font-medium">Essential quarterly plan</div>
