@@ -22,7 +22,7 @@ const Project = () => {
 
     return (
         <div className="mx-auto" style={{ backgroundColor: '#000212' }}>
-            <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
+            {/* <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
                 <div className={`row mb-5 gap-y-5 p-0 g-0 ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                     <div className="col-12 col-lg px-2">
                         <img src="/images/project1.png" className="img-fluid" alt="" />
@@ -47,7 +47,9 @@ const Project = () => {
                         <img src="/images/project6.png" className="img-fluid" alt="" />
                     </div>
                 </div>
-            </VisibilitySensor>
+            </VisibilitySensor> */}
+            {/* @ts-ignore */}
+            <div style={{height: "600px"}}> <iframe src="https://www.playbook.com/e/jenilthumar/aus1HghNQ5dihmRUpppUgrBs?theme=carousel&rows=1&slidesPerRow=3" title="Portals Work - Playbook.com" sandbox="allow-same-origin allow-scripts" frameborder="0" width="100%" height="100%" ></iframe> </div>
         </div>
     );
 }

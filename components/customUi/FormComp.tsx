@@ -28,7 +28,7 @@ const FormComp = () => {
                 <div className=" row row-cols-1 row-cols-lg-2 g-0 p-0">
                     <div className={`col relative ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                         <img src="/images/Union.png" alt="" />
-                        <div className=" absolute text-white top-20 px-3 px-lg-0 lg:left-44 text-lg">We are Portals and we are here to serve you :)</div>
+                        <div className=" absolute text-white top-20 px-3 px-lg-0 lg:left-44 text-lg">We are Portals and <br /> we are here to serve you :)</div>
                     </div>
                     <div className={` col relative ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                         <div className="lg:absolute top-20 w-full px-3 px-lg-0">
