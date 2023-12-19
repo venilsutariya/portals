@@ -53,10 +53,8 @@ const Project = () => {
           src="https://www.playbook.com/e/jenilthumar/aus1HghNQ5dihmRUpppUgrBs?theme=gallery"
           title="Portals Work - Playbook.com"
           sandbox="allow-same-origin allow-scripts"
-          frameborder="0"
           width="100%"
           height="100%"
-          color="#000212"
         ></iframe>
       </div>
     </div>
