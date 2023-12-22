@@ -11,7 +11,7 @@ const FAQ = () => {
     return (
         <div>
             <div className=" d-none d-lg-block px-32 mb-5 mt-24 py-5">
-                <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent lg:p-[0.1px] xl:p-[0.3px]  my-10 relative text-center">
+                <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent lg:p-[0.5px] xl:p-[0.5px]  my-10 relative text-center">
                 </div>
             </div>
             <div className=" container py-5">
@@ -29,57 +29,74 @@ const FAQ = () => {
                     </Accordion>
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>Turnaround times?</AccordionTrigger>
+                            <AccordionTrigger>What does the unlimited design and development service include/scope of service?</AccordionTrigger>
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
-                                Yes. It adheres to the WAI-ARIA design pattern.
+                                Our unlimited design and development service includes website design, mobile app development, user interface (UI) design,
+                                user experience (UX) design, front-end and back-end development, and more in whatever technology you prefer.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>How does pausing subscription work?</AccordionTrigger>
+                            <AccordionTrigger> How does the flat monthly fee work?</AccordionTrigger>
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
-                                Yes. It adheres to the WAI-ARIA design pattern.
+                                With our flat monthly fee, you get unlimited access to our design and development services for a fixed monthly cost. There are
+                                no additional charges or hidden fees.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>How does unlimited development works?</AccordionTrigger>
+                            <AccordionTrigger>How soon can I begin?</AccordionTrigger>
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
-                                Yes. It adheres to the WAI-ARIA design pattern.
+                                Right away--even today.
+                                Following your subscription, you will receive a welcome email, and you will be invited to a private Slack channel and paired with
+                                your very own designer and developer <br /> From there, you can make as many design and development requests as you need right away. <br /> There is no better way to get design and development work done quickly.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>How often will you communicate while I&#39;msubscribed?</AccordionTrigger>
+                            <AccordionTrigger>How fast do you work?</AccordionTrigger>
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
-                                Yes. It adheres to the WAI-ARIA design pattern.
+                                Most requests will be responded to within two business days. Our designers and developers work quickly without sacrificing
+                                quality. <br /> It may take a little longer for larger, more difficult requests. We will always notify you first so that you can plan accordingly and
+                                avoid disappointment.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>How do I request designs and developments?</AccordionTrigger>
+                            <AccordionTrigger>Do you work with pre-existing designs and coding??</AccordionTrigger>
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
-                                Yes. It adheres to the WAI-ARIA design pattern.
+                                If you already have a design or code that needs to be updated, we can certainly help you out. We excel at taking existing
+                                projects and fine-tuning them into stunning productions.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>What if I don&#39;t like the design?</AccordionTrigger>
+                            <AccordionTrigger>What if I run out of work?</AccordionTrigger>
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
-                                Yes. It adheres to the WAI-ARIA design pattern.
+                                It&apos;s all good. Simply pause the subscription and resume when you're ready to continue
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>What programs do we use?</AccordionTrigger>
+                            <AccordionTrigger>Is there a request cap?</AccordionTrigger>
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
-                                Yes. It adheres to the WAI-ARIA design pattern.
+                                There are none. You are free to make as many design and development requests as you want. Fill them up. We&apos;ll go through
+                                them one by one
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                    <Accordion type="single" collapsible>
+                        <AccordionItem value="item-1">
+                            <AccordionTrigger>What if I&apos;m unhappy with my design and live production?</AccordionTrigger>
+                            <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
+
+                                It&apos;s not a problem. You have an infinite number of revisions. We will continue to work on it until you are satisfied.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>

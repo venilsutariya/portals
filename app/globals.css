@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body {
   height: 100%;
+  padding: 0;
   background-color: #000212;
   margin: 0;
 }
 
 .headmain {
-  background: linear-gradient(220deg, #19142e94, #201a3700, #201a3700, #201a3700),
-    linear-gradient(-220deg, #19142e7f, #201a3700, #201a3700,#201a3700);
+  background: linear-gradient(
+      220deg,
+      #19142e94,
+      #201a3700,
+      #201a3700,
+      #201a3700
+    ),
+    linear-gradient(-220deg, #19142e7f, #201a3700, #201a3700, #201a3700);
   background-blend-mode: normal;
 }
 
@@ -70,6 +76,12 @@ section {
 
 .slotanimation {
   animation: topanimation 1s ease-in-out;
+}
+.footergrd {
+  background: var(
+    --Linear-violet,
+    linear-gradient(180deg, #9ca2e3 0%, #606bd2 100%)
+  );
 }
 @keyframes headanimation {
   0% {
