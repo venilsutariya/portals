@@ -78,7 +78,7 @@ const FAQ = () => {
                         <AccordionItem value="item-1">
                             <AccordionTrigger>What if I run out of work?</AccordionTrigger>
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
-                                It&apos;s all good. Simply pause the subscription and resume when you're ready to continue
+                                It&apos;s all good. Simply pause the subscription and resume when you&apos;re ready to continue
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
