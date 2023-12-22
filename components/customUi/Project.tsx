@@ -20,43 +20,61 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="mx-auto" style={{ backgroundColor: "#000212" }}>
-      {/* <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
-                <div className={`row mb-5 gap-y-5 p-0 g-0 ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
-                    <div className="col-12 col-lg px-2">
-                        <img src="/images/project1.png" className="img-fluid" alt="" />
-                    </div>
-                    <div className="col-12 col-lg-5 flex justify-center px-2">
-                        <img src="/images/project2.png" className=" img-fluid" alt="" />
-                    </div>
-                    <div className="col-12 col-lg flex justify-end px-2">
-                        <img src="/images/project3.png" className="img-fluid" alt="" />
-                    </div>
-                </div>
-            </VisibilitySensor>
-            <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
-                <div className={`row gap-y-5 p-0 g-0 ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
-                    <div className="col-12 col-lg animate__animated animate__slideInUp px-2">
-                        <img src="/images/project4.png" className="img-fluid" alt="" />
-                    </div>
-                    <div className="col-12 col-lg-5 justify-start px-2">
-                        <img src="/images/project5.png" className="img-fluid" alt="" />
-                    </div>
-                    <div className="col-12 col-lg flex justify-end px-2">
-                        <img src="/images/project6.png" className="img-fluid" alt="" />
-                    </div>
-                </div>
-            </VisibilitySensor> */}
-      {/* @ts-ignore */}
-      <div style={{height: "600px"}}>
-        <iframe
-          src="https://www.playbook.com/e/jenilthumar/aus1HghNQ5dihmRUpppUgrBs?theme=gallery"
-          title="Portals Work - Playbook.com"
-          sandbox="allow-same-origin allow-scripts"
-          width="100%"
-          height="100%"
-        ></iframe>
-      </div>
+    <div className=" max-h-[200vh] scrollbar-hide" style={{ backgroundColor: "#000212", overflowY: "hidden" , overflowX: "auto" }}>
+      <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
+        <div className="d-flex">
+          <img
+            src="/images/image 1.png"
+            alt="image"
+            className="img-fluid transform"
+            style={{transform: "rotate(-1deg)"}}
+          />
+          <img
+            src="/images/image 2.png"
+            alt="image"
+            className="img-fluid transform rotate-1"
+          />
+          <img
+            src="/images/image 3.png"
+            alt="image"
+            className="img-fluid transform"
+            style={{transform: "rotate(-1deg)"}}
+          />
+          <img
+            src="/images/image 4.png"
+            alt="image"
+            className="img-fluid transform rotate-1"
+          />
+          <img
+            src="/images/image 5.png"
+            alt="image"
+            className="img-fluid transform"
+            style={{transform: "rotate(-1deg)"}}
+          />
+          <img
+            src="/images/image 6.png"
+            alt="image"
+            className="img-fluid transform rotate-1"
+          />
+          <img
+            src="/images/image 7.png"
+            alt="image"
+            className="img-fluid transform"
+            style={{transform: "rotate(-1deg)"}}
+          />
+          <img
+            src="/images/image 8.png"
+            alt="image"
+            className="img-fluid transform rotate-1"
+          />
+          <img
+            src="/images/image 9.png"
+            alt="image"
+            className="img-fluid transform"
+            style={{transform: "rotate(-1deg)"}}
+          />
+        </div>
+      </VisibilitySensor>
     </div>
   );
 };

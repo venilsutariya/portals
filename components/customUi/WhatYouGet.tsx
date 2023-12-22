@@ -20,7 +20,7 @@ const WhatYouGet = () => {
     }, []);
     return (
         <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
-            <div className={`pt-52 px-3 pb-44 ${isVisible ? 'animate__animated animate__slideInUp' : ''}`} style={{ backgroundColor: '#000212' }}>
+            <div className={`lg:mt-[-300px] px-3 pb-44 ${isVisible ? 'animate__animated animate__slideInUp' : ''}`} style={{ backgroundColor: 'transparent' }}>
                 <div className=" lg:px-24">
                     <div className="row row-cols-1 row-cols-lg-2 p-0 g-0">
                         <div className=" col">
