@@ -29,8 +29,8 @@ const WhyChoose = () => {
                         <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent lg:p-[0.1px] xl:p-[0.3px]  my-10"></div>
                     </div>
                     <div className="">
-                        <div className='whychoosediv'>
-                            <div className=" row container  flex row-cols-1 row-cols-lg-3 gap-y-10 pb-5 px-0 g-0">
+                        <div className=' relative flex justify-end items-end'>
+                            <div className=" row container row-cols-1 row-cols-lg-3 gap-y-10 pb-5 px-0 g-0">
                                 <div className=" col flex tracking-wider gap-x-4">
                                     <span><img src="/images/icon1.png" alt="" /></span>
                                     <div>

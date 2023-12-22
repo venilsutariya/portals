@@ -84,11 +84,6 @@ section {
   );
 }
 
-.whychoosediv {
-  display: flex !important;
-  justify-content: end !important;
-}
-
 @keyframes headanimation {
   0% {
     transform: translateY(50px);
