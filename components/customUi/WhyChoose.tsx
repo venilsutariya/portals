@@ -45,7 +45,7 @@ const WhyChoose = () => {
                                         <span className=" text-white/50">Not just no-code</span>
                                     </div>
                                 </div>
-                                <div className=" col flex lg:justify-end pe-3 tracking-wider gap-x-4">
+                                <div className=" col flex lg:justify-end pe-4 tracking-wider gap-x-4">
                                     <span><img src="/images/icon2.png" alt="" /></span>
                                     <div className=" flex flex-col">
                                         <span style={{ color: '#fff' }}>Worry free pricing.</span>
