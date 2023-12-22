@@ -28,9 +28,9 @@ const WhyChoose = () => {
                     <div className="lg:px-32">
                         <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent lg:p-[0.1px] xl:p-[0.3px]  my-10"></div>
                     </div>
-                    <div className="">
-                        <div className=' relative flex justify-end items-end'>
-                            <div className=" row container row-cols-1 row-cols-lg-3 gap-y-10 pb-5 px-0 g-0">
+                    <div className="px-5">
+                        <div className=' relative flex justify-center items-end'>
+                            <div className=" row row-cols-1 row-cols-lg-3 gap-y-10 pb-5 px-0 g-0">
                                 <div className=" col flex tracking-wider gap-x-4">
                                     <span><img src="/images/icon1.png" alt="" /></span>
                                     <div>
@@ -38,14 +38,14 @@ const WhyChoose = () => {
                                         <span className=" text-white/50">We promise <br /> faster designs</span>
                                     </div>
                                 </div>
-                                <div className=" col flex tracking-wider gap-x-4">
+                                <div className=" col flex lg:justify-center tracking-wider gap-x-4">
                                     <span><img src="/images/icon4.png" alt="" /></span>
                                     <div className=" flex flex-col">
                                         <span style={{ color: '#fff' }}>Real development.</span>
                                         <span className=" text-white/50">Not just no-code</span>
                                     </div>
                                 </div>
-                                <div className=" col flex tracking-wider gap-x-4">
+                                <div className=" col flex lg:justify-end pe-3 tracking-wider gap-x-4">
                                     <span><img src="/images/icon2.png" alt="" /></span>
                                     <div className=" flex flex-col">
                                         <span style={{ color: '#fff' }}>Worry free pricing.</span>
@@ -59,14 +59,14 @@ const WhyChoose = () => {
                                         <span className=" text-white/50">On-board your team.</span>
                                     </div>
                                 </div>
-                                <div className=" col flex  tracking-wider gap-x-4">
+                                <div className=" col flex lg:justify-center  tracking-wider gap-x-4">
                                     <span className=''><img src="/images/icon5.png" alt="" /></span>
                                     <div className=" flex flex-col">
                                         <span style={{ color: '#fff' }}>Pause anytime.</span>
                                         <span className=" text-white/50">Resume  whenever <br /> you want.</span>
                                     </div>
                                 </div>
-                                <div className=" col flex tracking-wider gap-x-4">
+                                <div className=" col flex lg:justify-end tracking-wider gap-x-4">
                                     <span><img src="/images/icon6.png" alt="" /></span>
                                     <div className=" flex flex-col">
                                         <span style={{ color: '#fff' }}>Slack/Trello support.</span>
