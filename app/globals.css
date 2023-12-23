@@ -58,13 +58,27 @@ section {
 }
 
 /* for scroll component */
-.maincontainer {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+section {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  width: 100%;
+  z-index: -1;
 }
 
-section {
-  scroll-snap-align: start;
+section:nth-child(2) {
+	z-index: -2;
+}
+
+section:nth-child(3) {
+	z-index: -3;
+}
+
+section:last-child {
+  z-index: -4;
 }
 
 .animation {

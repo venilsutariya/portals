@@ -5,7 +5,7 @@ import { MdChevronRight } from "react-icons/md";
 const HeadMain = () => {
 
   return (
-    <div className="" style={{ backgroundColor: '#000212' }}>
+    <div style={{ backgroundColor: '#000212' }}>
       <div className=" headmain h-[100vh] flex justify-center">
         <div className="bgmainimg text-white">
           <div className=" flex flex-col justify-center items-center h-full text-center">
