@@ -2,6 +2,7 @@
 
 import VisibilitySensor from "react-visibility-sensor";
 import { useEffect, useRef, useState } from "react";
+import { AspectRatio } from "../ui/aspect-ratio";
 
 const Project = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -35,64 +36,132 @@ const Project = () => {
   }, []);
 
   return (
-    <div ref={innerDivRef} className=" max-h-[200vh] scrollbar-hide" style={{ backgroundColor: "#000212", overflowY: "hidden", overflowX: "auto" }}>
+    <>
+    <div ref={innerDivRef} className="scrollbar-hide" style={{ backgroundColor: "#000212", overflowY: "hidden", overflowX: "auto" }}>
       <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
-        <div className="py-5">
-          <div className="d-flex gap-x-10 p-5">
+        <div className="md:block hidden">
+          <div className="d-flex gap-x-5 p-3">
             <img
-              src="/images/image_1.png"
+              src="/images/image-1.png"
               alt="image"
-              className="img-fluid transform rounded-3xl"
+              className=" img-fluid  transform rounded-3xl sm:ms-[-7rem] md:ms-[-10rem] lg:ms-[-17rem]"
+              style={{ transform: "rotate(-1deg) scale(0.6)" }}
+            />
+            <img
+              src="/images/image-2.png"
+              alt="image"
+              className=" object-cover sm:ms-[-15rem] md:ms-[-20rem] lg:ms-[-30rem]  transform rounded-3xl rotate-1"
+              style={{ transform: "rotate(1deg) scale(0.6)" }}
+              />
+            <img
+              src="/images/image-3.png"
+              alt="image"
+              className=" object-cover sm:ms-[-15rem] md:ms-[-20rem] lg:ms-[-30rem]  transform rounded-3xl"
+              style={{ transform: "rotate(-1deg) scale(0.6)" }}
+              />
+            <img
+              src="/images/image-4.png"
+              alt="image"
+              className=" object-cover sm:ms-[-15rem] md:ms-[-20rem] lg:ms-[-30rem] transform rounded-3xl rotate-1"
+              style={{ transform: "rotate(1deg) scale(0.6)" }}
+              />
+            <img
+              src="/images/image-5.png"
+              alt="image"
+              className=" object-cover sm:ms-[-15rem] md:ms-[-20rem] lg:ms-[-30rem] transform rounded-3xl"
+              style={{ transform: "rotate(-1deg) scale(0.6)" }}
+              />
+            <img
+              src="/images/image-6.png"
+              alt="image"
+              className=" object-cover sm:ms-[-15rem] md:ms-[-20rem] lg:ms-[-30rem] transform rounded-3xl rotate-1"
+              style={{ transform: "rotate(1deg) scale(0.6)" }}
+              />
+            <img
+              src="/images/image-7.png"
+              alt="image"
+              className=" object-cover sm:ms-[-15rem] md:ms-[-20rem] lg:ms-[-30rem] transform rounded-3xl"
+              style={{ transform: "rotate(-1deg) scale(0.6)" }}
+              />
+            <img
+              src="/images/image-8.png"
+              alt="image"
+              className=" object-cover sm:ms-[-15rem] md:ms-[-20rem] lg:ms-[-30rem] transform rounded-3xl rotate-1"
+              style={{ transform: "rotate(1deg) scale(0.6)" }}
+            />
+            <img
+              src="/images/image-9.png"
+              alt="image"
+              className=" object-cover sm:ms-[-15rem] md:ms-[-20rem] lg:ms-[-30rem] transform rounded-3xl rotate-1"
+              style={{ transform: "rotate(-1deg) scale(0.6)" }}
+            />
+          </div>
+        </div>
+      </VisibilitySensor>
+    </div>
+    <div ref={innerDivRef} className="scrollbar-hide" style={{ backgroundColor: "#000212", overflowY: "hidden", overflowX: "auto" }}>
+      <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
+        <div className="md:hidden block">
+          <div className="d-flex gap-x-5 p-3">
+            <img
+              src="/images/image-1.png"
+              alt="image"
+              className=" img-fluid  transform rounded-3xl "
               style={{ transform: "rotate(-1deg)" }}
             />
             <img
-              src="/images/image_2.png"
+              src="/images/image-2.png"
               alt="image"
-              className="img-fluid transform rotate-1 rounded-3xl"
-            />
+              className=" object-cover transform rounded-3xl rotate-1"
+              style={{ transform: "rotate(1deg)" }}
+              />
             <img
-              src="/images/image_3.png"
+              src="/images/image-3.png"
               alt="image"
-              className="img-fluid transform rounded-3xl"
+              className=" object-cover transform rounded-3xl"
               style={{ transform: "rotate(-1deg)" }}
-            />
+              />
             <img
-              src="/images/image_4.png"
+              src="/images/image-4.png"
               alt="image"
-              className="img-fluid transform rotate-1 rounded-3xl"
-            />
+              className=" object-cover transform rounded-3xl rotate-1"
+              style={{ transform: "rotate(1deg)" }}
+              />
             <img
-              src="/images/image_5.png"
+              src="/images/image-5.png"
               alt="image"
-              className="img-fluid transform rounded-3xl"
+              className=" object-cover transform rounded-3xl"
               style={{ transform: "rotate(-1deg)" }}
-            />
+              />
             <img
-              src="/images/image_6.png"
+              src="/images/image-6.png"
               alt="image"
-              className="img-fluid transform rotate-1 rounded-3xl"
-            />
+              className=" object-cover transform rounded-3xl rotate-1"
+              style={{ transform: "rotate(1deg)" }}
+              />
             <img
-              src="/images/image_7.png"
+              src="/images/image-7.png"
               alt="image"
-              className="img-fluid transform rounded-3xl"
+              className=" object-cover transform rounded-3xl"
               style={{ transform: "rotate(-1deg)" }}
+              />
+            <img
+              src="/images/image-8.png"
+              alt="image"
+              className=" object-cover transform rounded-3xl rotate-1"
+              style={{ transform: "rotate(1deg)" }}
             />
             <img
-              src="/images/image_8.png"
+              src="/images/image-9.png"
               alt="image"
-              className="img-fluid transform rotate-1 rounded-3xl"
-            />
-            <img
-              src="/images/image_9.png"
-              alt="image"
-              className="img-fluid transform rounded-3xl"
+              className=" object-cover transform rounded-3xl rotate-1"
               style={{ transform: "rotate(-1deg)" }}
             />
           </div>
         </div>
       </VisibilitySensor>
     </div>
+    </>
   );
 };
 

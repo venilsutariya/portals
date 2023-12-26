@@ -25,7 +25,7 @@ const ScrollSlider = () => {
                     }`}
                 >
                   <div className="col flex justify-start items-center">
-                    <img src={"/images/slide1.png"} className="img-fluid" alt="" />
+                    <img src={"/images/slide1.png"} className="mb-5 lg:mb-0 img-fluid" alt="" />
                   </div>
                   <div className="col flex flex-col justify-center items-center">
                     <div className="lg:px-24 lg:mt-[-80px] animate__animated animate__slideInUp">
@@ -59,7 +59,7 @@ const ScrollSlider = () => {
                   style={{ backgroundColor: "#000212" }}
                 >
                   <div className="col flex justify-start items-center">
-                    <img src={"/images/slide2.png"} className="img-fluid" alt="" />
+                    <img src={"/images/slide2.png"} className="mb-5 lg:mb-0 img-fluid" alt="" />
                   </div>
                   <div className="col flex flex-col justify-center items-center">
                     <div className="lg:px-20 lg:mt-[-40px] animate__animated animate__slideInUp">
@@ -93,7 +93,7 @@ const ScrollSlider = () => {
                     }`}
                 >
                   <div className="col flex justify-start items-center">
-                    <img src={"/images/slide3.png"} className="img-fluid" alt="" />
+                    <img src={"/images/slide3.png"} className="mb-5 lg:mb-0 img-fluid" alt="" />
                   </div>
                   <div className="col flex flex-col justify-center items-center">
                     <div className="lg:px-24 lg:mt-[-120px] animate__animated animate__slideInUp">
