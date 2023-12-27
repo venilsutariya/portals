@@ -16,18 +16,18 @@ export default function Home() {
 
   return (
     <>
-        <HeadMain />
-        <Client />
-        <ScrollSlider />
-        <Project />
-        <WhatYouGet />
-        <Cards />
-        <Technologies />
-        <WhyChoose />
-        <Plans />
-        <FormComp />
-        <FAQ />
-        <Footer />
+      <HeadMain />
+      <Client />
+      <div id='howitworks'><ScrollSlider /></div>
+      <div id='work'><Project /></div>
+      <WhatYouGet />
+      <Cards />
+      <div id='usecases'><Technologies /></div>
+      <WhyChoose />
+      <div id='plans'><Plans /></div>
+      <div id='contact'><FormComp /></div>
+      <FAQ />
+      <Footer />
     </>
   )
 }

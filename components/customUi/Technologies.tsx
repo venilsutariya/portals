@@ -22,7 +22,7 @@ const Technologies = () => {
 
     return (
         <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
-            <div className=" pb-36" style={{ backgroundColor: '#000212' }}>
+            <div className=" pt-5 pb-36" style={{ backgroundColor: '#000212' }}>
                 <div className=' container'>
                 <div className={` row p-0 g-0 ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                     <div className="col-12 col-lg-3 flex justify-start">

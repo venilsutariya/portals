@@ -1,18 +1,27 @@
+"use client";
+
 import NavbarComp from "@/components/customUi/Navbar";
+import { useEffect } from "react";
+import { initializeSmoothScroll } from "@/utils/smoothScroll";
 
 const RootLayout = ({
     children
 }: {
     children: React.ReactNode
 }) => {
-    return ( 
+
+    useEffect(() => {
+        initializeSmoothScroll();
+    }, []);
+
+    return (
         <div className=" relative">
             <div className="absolute w-full">
-            <NavbarComp />
+                <NavbarComp />
             </div>
             {children}
         </div>
-     );        
+    );
 }
- 
-export default RootLayout;      
+
+export default RootLayout;

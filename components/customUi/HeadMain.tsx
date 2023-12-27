@@ -12,7 +12,7 @@ const HeadMain = () => {
             <div className="slotanimation py-1 px-3 mb-3" style={{ backgroundColor: 'rgba(180, 188, 208, 0.45)', color: '#fff', borderRadius: '50px' }}>3 spots remaining</div>
             <div className=" xl:text-6xl lg:text-6xl md:text-5xl text-4xl flex flex-col gap-y-3">
               <span className="animation">The only <span className="">Design & Development </span></span>
-              <span className="animation2 xl:text-6xl lg:text-6xl md:text-5xl text-3xl">service you will ever need</span>
+              <span className="animation2">service you will ever need</span>
             </div>
             <p className=" my-[24px] xl:text-lg md:text-xl px-3 flex flex-col" style={{ color: '#B4BCD0' }}>
               <span className=" tracking-wider">Elevate your venture with our flexible design & development plans.</span>

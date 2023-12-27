@@ -81,7 +81,7 @@ const Plans = () => {
                             </div>
                         </div>
                         <div className="lg:px-32 mb-5 mt-24">
-                            <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent lg:p-[0.1px] xl:p-[0.3px]  my-10 relative text-center">
+                            <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent p-[0.5px]  my-10 relative text-center">
                                 <span style={{backgroundColor: '#000212', color: 'rgba(180, 188, 208, 1)'}} className=' absolute px-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl'>or</span>
                             </div>
                         </div>

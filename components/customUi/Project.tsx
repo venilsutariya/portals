@@ -37,7 +37,7 @@ const Project = () => {
 
   return (
     <>
-    <div ref={innerDivRef} className="scrollbar-hide" style={{ backgroundColor: "#000212", overflowY: "hidden", overflowX: "auto" }}>
+    <div id="work" ref={innerDivRef} className="scrollbar-hide" style={{ backgroundColor: "#000212", overflowY: "hidden", overflowX: "auto" }}>
       <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
         <div className="">
           <div className="d-flex gap-x-5 p-3">
