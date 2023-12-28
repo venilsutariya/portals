@@ -21,7 +21,7 @@ export default function Home() {
       {/* <div id='howitworks'><ScrollSlider /></div> */}
       <div id='work'><Project /></div>
       <WhatYouGet />
-      <Cards />
+      <div id='howitworks'><Cards /></div>
       <div id='usecases'><Technologies /></div>
       <WhyChoose />
       <div id='plans'><Plans /></div>

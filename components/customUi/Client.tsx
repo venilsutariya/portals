@@ -26,7 +26,7 @@ const Client = () => {
                     <div className="text-center pb-5 border-0" style={{ backgroundColor: '#000212' }}>
                         <div className={` py-5 container ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                             <div className=' lg:px-24'>
-                                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-5 gap-x-0 gap-y-5">
+                                <div className="row p-0 g-0 row-cols-1 row-cols-md-2 row-cols-lg-5 gap-x-0 gap-y-5">
                                     <div className="col px-5 flex justify-center mb-5 mb-lg-0">
                                         <img src="/images/client1.png" className=" img-fluid object-contain" alt="" />
                                     </div>
