@@ -111,6 +111,18 @@ section:last-child {
   );
 }
 
+.mouse-shadow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  z-index: 9999;
+}
+
 @keyframes headanimation {
   0% {
     transform: translateY(50px);
