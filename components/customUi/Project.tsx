@@ -2,7 +2,6 @@
 
 import VisibilitySensor from "react-visibility-sensor";
 import { useEffect, useRef, useState } from "react";
-import { AspectRatio } from "../ui/aspect-ratio";
 
 const Project = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);

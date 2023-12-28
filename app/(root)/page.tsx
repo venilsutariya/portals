@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <HeadMain />
       <Client />
-      <div id='howitworks'><ScrollSlider /></div>
+      {/* <div id='howitworks'><ScrollSlider /></div> */}
       <div id='work'><Project /></div>
       <WhatYouGet />
       <Cards />

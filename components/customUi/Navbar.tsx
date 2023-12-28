@@ -18,7 +18,7 @@ const NavbarComp = () => {
     return (
         <>
             <Navbar expand="lg" className=" px-lg-5 px-4 pt-4">
-                <Navbar.Brand href="#home" className=' ms-0 ms-lg-5 text-white' style={{ fontSize: '27px', fontWeight: '600' }}>Portals<span style={{ color: '#5E6AD2' }}>.</span></Navbar.Brand>
+                <Navbar.Brand href="#home" className=' ms-0 ms-lg-5 text-white' style={{ fontSize: '27px' }}>Portals<span style={{ color: '#5E6AD2' }}>.</span></Navbar.Brand>
                 <>
                         <Sheet>
                             <SheetTrigger><CgMenuRight className=" d-block d-lg-none" color={'#fff'} size={30} /></SheetTrigger>

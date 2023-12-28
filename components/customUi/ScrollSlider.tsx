@@ -38,11 +38,11 @@ const ScrollSlider = () => {
                         fulfilling your request.
                       </p>
                     </div>
-                    <div className="absolute right-3 d-none d-lg-block">
+                    {/* <div className="absolute right-3 d-none d-lg-block">
                       <div className="h-[100px] w-[1px] bg-white mb-2"></div>
                       <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
                       <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -73,11 +73,11 @@ const ScrollSlider = () => {
                         time is 1-3 days.
                       </p>
                     </div>
-                    <div className="absolute right-5 d-none d-lg-block">
+                    {/* <div className="absolute right-5 d-none d-lg-block">
                       <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
                       <div className="h-[100px] w-[1px] bg-white mb-2"></div>
                       <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -105,11 +105,11 @@ const ScrollSlider = () => {
                         you get what you want from us.
                       </p>
                     </div>
-                    <div className="absolute right-3 d-none d-lg-block">
+                    {/* <div className="absolute right-0 d-none d-lg-block">
                       <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
                       <div className="h-[100px] w-[1px] bg-violet-500 mb-2"></div>
                       <div className="h-[100px] w-[1px] bg-white mb-2"></div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

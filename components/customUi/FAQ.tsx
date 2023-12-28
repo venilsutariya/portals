@@ -51,7 +51,7 @@ const FAQ = () => {
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
                                 Right away--even today.
                                 Following your subscription, you will receive a welcome email, and you will be invited to a private Slack channel and paired with
-                                your very own designer and developer <br /> From there, you can make as many design and development requests as you need right away. <br /> There is no better way to get design and development work done quickly.
+                                your very own designer and developer From there, you can make as many design and development requests as you need right away. There is no better way to get design and development work done quickly.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
