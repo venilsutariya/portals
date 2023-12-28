@@ -30,7 +30,7 @@ const Plans = () => {
                         <div className="">every use case</div>
                     </div>
                     <div className=" container">
-                        <div className=" row row-col-1 row-cols-lg-2 gap-y-4 p-0 g-0">
+                        <div className=" row row-col-1 row-cols-lg-2 gap-y-4 gap-x-2 p-0">
                             <div className=" col-12 col-lg-6">
                                 <div className=" lg:ps-44">
                                     <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} bg-white py-5 px-5 rounded-xl border-1`}>
