@@ -123,15 +123,8 @@ section:last-child {
   z-index: 9999;
 }
 
-@keyframes headanimation {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+.mouseclick {
+  /* handle */
 }
 
 @keyframes topanimation {
