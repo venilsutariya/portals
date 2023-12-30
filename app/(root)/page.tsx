@@ -23,9 +23,9 @@ export default function Home() {
       <HeadMain />
       <Client />
       {/* <div id='howitworks'><ScrollSlider /></div> */}
-      <div id='work'><Project /></div>
-      <WhatYouGet />
-      <div id='howitworks'><Cards /></div>
+      <div><Project /></div>
+      <div id='howitworks'><WhatYouGet /></div>
+      <div><Cards /></div>
       <div id='usecases'><Technologies /></div>
       <WhyChoose />
       <div id='plans'><Plans /></div>

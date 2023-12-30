@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="col inline-flex flex-col items-start gap-9 px-5 mb-5 mb-lg-0">
                         <div className=" text-black text-xl">
                             <div>Menu</div>
-                            <div className="lg:w-[17.3125rem] xl:w-[24.3125rem] h-[0.125rem] bg-black flex-shrink-0">
+                            <div className="lg:w-[17.3125rem] xl:w-[21.3125rem] h-[0.125rem] bg-black flex-shrink-0">
                             </div>
                             <div>Work</div>
                             <div>How it works</div>
@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className="col inline-flex flex-col items-start gap-9 px-5 mb-5 mb-lg-0">
                         <div className="text-black text-xl">
                             <div>Social</div>
-                            <div className="lg:w-[17.3125rem] xl:w-[24.3125rem] h-[0.125rem] bg-black flex-shrink-0">
+                            <div className="lg:w-[17.3125rem] xl:w-[21.3125rem] h-[0.125rem] bg-black flex-shrink-0">
                             </div>
                             <div>Instagram</div>
                             <div>Dribble</div>
@@ -31,7 +31,7 @@ const Footer = () => {
                     <div className="col inline-flex flex-col items-start gap-9 px-5 mb-5 mb-lg-0">
                         <div className="text-black text-xl">
                             <div>Contact</div>
-                            <div className="lg:w-[17.3125rem] xl:w-[24.3125rem] h-[0.125rem] bg-black flex-shrink-0">
+                            <div className="lg:w-[17.3125rem] xl:w-[21.3125rem] h-[0.125rem] bg-black flex-shrink-0">
                             </div>
                             <div>hello@portals.io</div>
                         </div>

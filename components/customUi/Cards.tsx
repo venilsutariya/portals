@@ -25,8 +25,8 @@ const Cards = () => {
                     <div className="row row-cols-1 row-cols-lg-3 p-0 g-0">
                         <div className=" col px-5 flex justify-center">
                             <div className=" px-2 px-lg-5">
-                                <div className="">
-                                    <img src="/images/card1.png" alt="" />
+                                <div className="ms-[-12px]">
+                                    <img src="/images/card1.png" className='' alt="" />
                                 </div>
                                 <div className=" text-white text-xl my-3">Design</div>
                                 <p className=" tracking-wide text-md" style={{ color: '#D9D9D9' }}>We design websites, web apps, mobile apps, SaaS, Anything in UI & UX and social media assets too.</p>
@@ -34,7 +34,7 @@ const Cards = () => {
                         </div>
                         <div className=" col px-5 flex justify-center">
                             <div className="px-2 px-lg-4">
-                                <div>
+                                <div className="ms-[-12px]">
                                     <img src="/images/card2.png" alt="" />
                                 </div>
                                 <div className=" text-white text-xl my-3">Development</div>
@@ -43,7 +43,7 @@ const Cards = () => {
                         </div>
                         <div className=" col px-5">
                             <div className=" px-2 px-lg-4 px-lg-3">
-                                <div>
+                                <div className="ms-[-20px]">
                                     <img src="/images/card3.png" alt="" />
                                 </div>
                                 <div className=" text-white text-xl my-3">Blend</div>

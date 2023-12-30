@@ -24,7 +24,7 @@ const Plans = () => {
     return (
         <>
             <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
-                <div className="py-5" style={{ backgroundColor: '#000212' }}>
+                <div className="py-5 mt-24" style={{ backgroundColor: '#000212' }}>
                     <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} flex flex-col text-center text-white text-4xl pb-24`}>
                         <div>Flexible plans for</div>
                         <div className="">every use case</div>
@@ -47,11 +47,11 @@ const Plans = () => {
                                             <span className=" ms-1"><MdChevronRight /></span>
                                         </button>
                                         <div className=" text-black mt-4 mb-4 font-semibold">What&#39;s included</div>
-                                        <p className="mb-3 flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited revisions</span></p>
-                                        <p className="mb-3 flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited development</span></p>
-                                        <p className="mb-3 flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited brands</span></p>
-                                        <p className=" mb-3 flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span>Dedicated designer and developer</span></p>
-                                        <p className="mb-3 flex gap-x-2"><span><IoMdCheckmark color={'#606BD2'} /></span><span>Slack/Trello channel</span></p>
+                                        <p className="mb-3 flex gap-x-2"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited revisions</span></p>
+                                        <p className="mb-3 flex gap-x-2"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited development</span></p>
+                                        <p className="mb-3 flex gap-x-2"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited brands</span></p>
+                                        <p className="mb-3 flex gap-x-2"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span>Dedicated designer and developer</span></p>
+                                        <p className="mb-3 flex gap-x-2"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span>Slack/Trello channel</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -71,11 +71,11 @@ const Plans = () => {
                                             <span className=" ms-1"><MdChevronRight /></span>
                                         </button>
                                         <div className=" text-white mt-4 mb-4 font-medium">What&#39;s included</div>
-                                        <p className=" flex gap-x-2 mb-3"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited revisions</span></p>
-                                        <p className=" flex gap-x-2 mb-3"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited development</span></p>
-                                        <p className=" flex gap-x-2 mb-3"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited brands</span></p>
-                                        <p className=" flex gap-x-2 mb-3"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Dedicated designer and developer</span></p>
-                                        <p className=" flex gap-x-2 mb-3"><span><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Slack/Trello channel</span></p>
+                                        <p className=" flex gap-x-2 mb-3"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited revisions</span></p>
+                                        <p className=" flex gap-x-2 mb-3"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited development</span></p>
+                                        <p className=" flex gap-x-2 mb-3"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited brands</span></p>
+                                        <p className=" flex gap-x-2 mb-3"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Dedicated designer and developer</span></p>
+                                        <p className=" flex gap-x-2 mb-3"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Slack/Trello channel</span></p>
                                     </div>
                                 </div>
                             </div>
