@@ -126,7 +126,7 @@ const Project = () => {
             </div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5">
               <div className="text-white lg:mb-0 mb-3 text-4xl">Ripen</div>
-              <div className=" flex gap-x-3" style={{ color: '#B4BCD0' }}>
+              <div className=" flex flex-wrap gap-y-2 gap-x-3" style={{ color: '#B4BCD0' }}>
                 <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>Pitch deck</div>
                 <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>Presentation</div>
                 <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>investors deck</div>
