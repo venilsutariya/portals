@@ -78,7 +78,7 @@ const Project = () => {
 
 
 
-      <div ref={innerDivRef} className="scrollbar-hide container" style={{ backgroundColor: "#000212", overflowY: "hidden", overflowX: "auto" }}>
+      <div ref={innerDivRef} className="scrollbar-hide px-2 lg:px-0 lg:container" style={{ backgroundColor: "#000212", overflowY: "hidden", overflowX: "auto" }}>
         <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
           <div>
             <div className="lg:px-32 my-24">
@@ -94,9 +94,9 @@ const Project = () => {
             <div className=" lg:flex justify-between items-center mb-3 mt-5">
               <div className="text-white lg:mb-0 mb-3 text-4xl">Veriprod</div>
               <div className=" flex gap-x-3" style={{ color: '#B4BCD0' }}>
-                <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>UI/UX</div>
-                <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>App design</div>
-                <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>Flutter</div>
+                <div className=" text-sm mt-1 lg:text-lg lg:mt-0 rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>UI/UX</div>
+                <div className=" text-sm mt-1 lg:text-lg lg:mt-0 rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>App design</div>
+                <div className=" text-sm mt-1 lg:text-lg lg:mt-0 rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>Flutter</div>
               </div>
             </div>
             <div className=" mt-5 pt-5">
@@ -105,9 +105,9 @@ const Project = () => {
             <div className=" lg:flex justify-between items-center mb-3 mt-5">
               <div className="text-white lg:mb-0 mb-3 text-4xl">Fractionally</div>
               <div className=" flex gap-x-3" style={{ color: '#B4BCD0' }}>
-                <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>UI/UX</div>
-                <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>Web design</div>
-                <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>NextJS</div>
+                <div className="text-sm mt-1 lg:text-lg lg:mt-0 rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>UI/UX</div>
+                <div className="text-sm mt-1 lg:text-lg lg:mt-0 rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>Web design</div>
+                <div className="text-sm mt-1 lg:text-lg lg:mt-0 rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>NextJS</div>
               </div>
             </div>
             <div className=" mt-5 pt-5">
@@ -116,9 +116,9 @@ const Project = () => {
             <div className=" lg:flex justify-between items-center mb-3 mt-5">
               <div className="text-white lg:mb-0 mb-3 text-4xl">Restaurant finder web app</div>
               <div className=" flex gap-x-3" style={{ color: '#B4BCD0' }}>
-                <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>UI/UX</div>
-                <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>Web app</div>
-                <div className=" rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>React</div>
+                <div className="text-sm mt-1 lg:text-lg lg:mt-0 rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>UI/UX</div>
+                <div className="text-sm mt-1 lg:text-lg lg:mt-0 rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>Web app</div>
+                <div className="text-sm mt-1 lg:text-lg lg:mt-0 rounded-full px-3 py-1" style={{ border: '1px solid #B4BCD0' }}>React</div>
               </div>
             </div>
             <div className=" mt-5 pt-5">

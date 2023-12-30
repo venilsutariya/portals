@@ -58,7 +58,7 @@ const CursorFollower: React.FC = () => {
 
     return (
         <div
-            className={`${isLeftClicked && 'mouseclick'}`}
+            className={`${isLeftClicked && 'mouseclick'} hidden lg:block`}
             ref={cursorRef}
             onClick={handleClick}
             // @ts-ignore

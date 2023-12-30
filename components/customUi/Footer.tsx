@@ -37,9 +37,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" flex px-5 justify-between text-black text-xl">
+                <div className=" lg:flex px-5 lg:justify-between text-black text-xl">
                     <div className=" flex justify-start">Built in Surat, Gujarat.</div>
-                    <div className=" flex justify-end">&copy;2024</div>
+                    <div className=" flex lg:justify-end">&copy;2024</div>
                 </div>
             </div>
         </div>

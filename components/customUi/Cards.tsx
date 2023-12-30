@@ -22,7 +22,7 @@ const Cards = () => {
         <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
             <div className=" container-fluid" style={{ backgroundColor: '#000212' }}>
                 <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
-                    <div className="row row-cols-1 row-cols-lg-3 p-0 g-0">
+                    <div className="row gap-y-10 row-cols-1 row-cols-lg-3 p-0 g-0">
                         <div className=" col px-5 flex justify-center">
                             <div className=" px-2 px-lg-5">
                                 <div className="ms-[-12px]">

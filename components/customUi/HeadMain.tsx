@@ -18,7 +18,7 @@ const HeadMain = () => {
               <span className=" tracking-wider">Elevate your venture with our flexible design & development plans.</span>
             </p>
             <div className=" flex w-full justify-center items-center gap-x-4 mt-3">
-              <button style={{ borderRadius: '8px', padding: '0px 24px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="lg:w-[195px] lg:h-[55px] text-xl flex justify-center items-center text-white hover:opacity-90">
+              <button style={{ borderRadius: '8px', padding: '0px 24px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="w-[195px] h-[55px] text-xl flex justify-center items-center text-white hover:opacity-90">
                 <span>Get  started</span>
                 <span className=" ms-1"><MdChevronRight /></span>
               </button>
