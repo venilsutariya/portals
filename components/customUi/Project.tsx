@@ -33,7 +33,7 @@ const Project = () => {
       {/* modal */}
       <Modal className=" backdrop-blur-lg" size="xl" show={show} onHide={() => setShow(false)} animation={false}>
         <Modal.Body className=" p-0 relative">
-          <div className=" text-white fixed right-3 top-3" onClick={() => setShow(false)}>
+          <div className=" text-violet-300 fixed right-3 top-3" onClick={() => setShow(false)}>
             <AiOutlineCloseCircle size={40}/>
           </div>
           <img src="/images/fullproject1.jpg" alt="" />
@@ -43,7 +43,7 @@ const Project = () => {
 
       <Modal className=" backdrop-blur-lg" size="xl" show={showSecond} onHide={() => setShowSecond(false)} animation={false}>
         <Modal.Body className=" p-0 relative">
-          <div className=" text-white fixed right-3 top-3" onClick={() => setShowSecond(false)}>
+          <div className=" text-violet-300 fixed right-3 top-3" onClick={() => setShowSecond(false)}>
             <AiOutlineCloseCircle size={40}/>
           </div>
           <img src="/images/fullproject2.png" alt="" />
@@ -53,7 +53,7 @@ const Project = () => {
 
       <Modal className=" backdrop-blur-lg" size="xl" show={showThird} onHide={() => setShowThird(false)} animation={false}>
         <Modal.Body className=" p-0 relative">
-          <div className=" text-white fixed right-3 top-3" onClick={() => setShowThird(false)}>
+          <div className=" text-violet-300 fixed right-3 top-3" onClick={() => setShowThird(false)}>
             <AiOutlineCloseCircle size={40}/>
           </div>
           <img src="/images/frame 41.png" alt="" />
