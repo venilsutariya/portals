@@ -5,10 +5,12 @@ import VisibilitySensor from 'react-visibility-sensor';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { Loader2 } from 'lucide-react';
+import { useToast } from "@/components/ui/use-toast"
 
 const FormComp = () => {
+    const { toast } = useToast();
     const [isVisible, setIsVisible] = useState<boolean>(false);
-    const { register, handleSubmit, reset, getValues } = useForm({
+    const { register, handleSubmit, reset } = useForm({
         defaultValues: {
             name: '',
             email: '',
@@ -16,22 +18,32 @@ const FormComp = () => {
         }
     });
     const [isButton, setisButton] = useState(true);
+    const [error, setError] = useState('');
 
     const onSubmit = async (data: any) => {
-        try {
-            setisButton(false);
-            const response = await axios.post(`/api/sendmail`, data);
-            if (response.status === 200) {
-                console.log('Email sent successfully!');
-                // Reset form fields or display a success message
-            } else {
-                console.error('Error sending email:', response.statusText);
+        if (data.name === '' || data.email === '' || data.message === '') {
+            setError("Uh-oh! Form fields feeling lonely. Fill 'em all in to throw a digital party! 🎉")
+        } else {
+            try {
+                setError("");
+                setisButton(false);
+                const response = await axios.post(`/api/sendmail`, data);
+                if (response.status === 200) {
+                    console.log('Email sent successfully!');
+                    // Reset form fields or display a success message
+                } else {
+                    console.error('Error sending email:', response.statusText);
+                }
+            } catch (error) {
+                // handle error
+            } finally {
+                reset();
+                setisButton(true);
+                toast({
+                    title: "Success! Catch-up Scheduled 🚀",
+                    description: "Your catch-up is locked in. Exciting times ahead!",
+                })
             }
-        } catch (error) {
-            // handle error
-        } finally {
-            reset();
-            setisButton(true);
         }
     }
 
@@ -62,6 +74,7 @@ const FormComp = () => {
                     </div>
                     <div className={` col relative ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                         <div className="lg:absolute top-20 w-full px-3 px-lg-0">
+                            <span className=' absolute top-[-30px] text-red-500'>{error}</span>
                             <form onSubmit={handleSubmit(onSubmit)} className="lg:pe-44">
                                 <div className="flex flex-col">
                                     <label className=" mb-3" style={{ color: 'rgba(180, 188, 208, 1)' }} htmlFor="name">NAME(*)</label>
@@ -69,7 +82,7 @@ const FormComp = () => {
                                 </div>
                                 <div className="flex flex-col">
                                     <label className=" my-3" style={{ color: 'rgba(180, 188, 208, 1)' }} htmlFor="mail">EMAIL(*)</label>
-                                    <input {...register('email')} style={{ backgroundColor: 'rgba(180, 188, 208, 1)' }} className=" py-2 border-b-2 border-white px-2" type="text" id="mail" />
+                                    <input {...register('email')} style={{ backgroundColor: 'rgba(180, 188, 208, 1)' }} className=" py-2 border-b-2 border-white px-2" type='email' id="mail" />
                                 </div>
                                 <div className="flex flex-col">
                                     <label className=" my-3" style={{ color: 'rgba(180, 188, 208, 1)' }} htmlFor="mail">MESSAGE(*)</label>

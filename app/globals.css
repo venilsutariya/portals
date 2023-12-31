@@ -134,6 +134,13 @@ section:last-child {
 cursor: pointer;
 }
 
+input:focus {
+  outline: none !important;
+}
+textarea:focus {
+  outline: none !important;
+}
+
 @keyframes topanimation {
   0% {
     transform: translateY(-1000px);
