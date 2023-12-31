@@ -78,7 +78,7 @@ const Project = () => {
 
 
 
-      <div ref={innerDivRef} className="scrollbar-hide px-2 lg:px-0 lg:container" style={{ backgroundColor: "#000212", overflowY: "hidden", overflowX: "auto" }}>
+      <div ref={innerDivRef} className="scrollbar-hide px-2 lg:px-0 container" style={{ backgroundColor: "#000212", overflowY: "hidden", overflowX: "auto" }}>
         <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
           <div>
             <div className="lg:px-32 my-24">
@@ -100,7 +100,7 @@ const Project = () => {
               </div>
             </div>
             <div className=" mt-5 pt-5">
-              <img onClick={() => setShowSecond(true)} src="/images/project2.png" className="cursorimg img-fluid" alt="" />
+              <img onClick={() => setShowSecond(true)} src="/images/project2.png" className="w-full cursorimg img-fluid" alt="" />
             </div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5">
               <div className="text-white lg:mb-0 mb-3 text-4xl">Fractionally</div>

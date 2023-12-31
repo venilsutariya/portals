@@ -2,9 +2,38 @@
 
 import { useState, useEffect } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
+import { useForm } from 'react-hook-form';
+import axios from 'axios';
+import { Loader2 } from 'lucide-react';
 
 const FormComp = () => {
     const [isVisible, setIsVisible] = useState<boolean>(false);
+    const { register, handleSubmit, reset, getValues } = useForm({
+        defaultValues: {
+            name: '',
+            email: '',
+            message: ''
+        }
+    });
+    const [isButton, setisButton] = useState(true);
+
+    const onSubmit = async (data: any) => {
+        try {
+            setisButton(false);
+            const response = await axios.post(`/api/sendmail`, data);
+            if (response.status === 200) {
+                console.log('Email sent successfully!');
+                // Reset form fields or display a success message
+            } else {
+                console.error('Error sending email:', response.statusText);
+            }
+        } catch (error) {
+            // handle error
+        } finally {
+            reset();
+            setisButton(true);
+        }
+    }
 
     const onVisibilityChange = (visible: boolean) => {
         if (visible) {
@@ -18,6 +47,7 @@ const FormComp = () => {
             setIsVisible(false);
         };
     }, []);
+
     return (
         <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
             <div>
@@ -32,23 +62,28 @@ const FormComp = () => {
                     </div>
                     <div className={` col relative ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                         <div className="lg:absolute top-20 w-full px-3 px-lg-0">
-                            <form className="lg:pe-44">
+                            <form onSubmit={handleSubmit(onSubmit)} className="lg:pe-44">
                                 <div className="flex flex-col">
                                     <label className=" mb-3" style={{ color: 'rgba(180, 188, 208, 1)' }} htmlFor="name">NAME(*)</label>
-                                    <input style={{ backgroundColor: 'rgba(180, 188, 208, 1)' }} className=" py-2 border-b-2 border-white px-2" type="text" id="name" />
+                                    <input {...register('name')} style={{ backgroundColor: 'rgba(180, 188, 208, 1)' }} className=" py-2 border-b-2 border-white px-2" type="text" id="name" />
                                 </div>
                                 <div className="flex flex-col">
                                     <label className=" my-3" style={{ color: 'rgba(180, 188, 208, 1)' }} htmlFor="mail">EMAIL(*)</label>
-                                    <input style={{ backgroundColor: 'rgba(180, 188, 208, 1)' }} className=" py-2 border-b-2 border-white px-2" type="text" id="mail" />
+                                    <input {...register('email')} style={{ backgroundColor: 'rgba(180, 188, 208, 1)' }} className=" py-2 border-b-2 border-white px-2" type="text" id="mail" />
                                 </div>
                                 <div className="flex flex-col">
                                     <label className=" my-3" style={{ color: 'rgba(180, 188, 208, 1)' }} htmlFor="mail">MESSAGE(*)</label>
-                                     {/* @ts-ignore: Suppress rows cols typeerror */}
-                                    <textarea style={{ backgroundColor: 'rgba(180, 188, 208, 1)' }} className=" py-2 border-b-2 border-white px-2" name="" id="message" cols="30" rows="7"></textarea>
+                                    {/* @ts-ignore: Suppress rows cols typeerror */}
+                                    <textarea {...register('message')} style={{ backgroundColor: 'rgba(180, 188, 208, 1)' }} className=" py-2 border-b-2 border-white px-2" id="message" cols="30" rows="7"></textarea>
                                 </div>
-                                <button style={{ borderRadius: '5px', padding: '10px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="mt-5 text-lg flex justify-center items-center text-white hover:opacity-90">
-                                    <span>Send message</span>
-                                </button>
+                                {
+                                    isButton ? <button style={{ borderRadius: '5px', padding: '10px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="mt-5 text-lg flex justify-center items-center text-white hover:opacity-90">
+                                        <span>Send message</span>
+                                    </button> : <button style={{ borderRadius: '5px', padding: '10px 25px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="mt-5 text-lg flex justify-center items-center text-white hover:opacity-90" disabled>
+                                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                        Sending
+                                    </button>
+                                }
                             </form>
                         </div>
                     </div>
