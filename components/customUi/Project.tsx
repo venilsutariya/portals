@@ -86,7 +86,7 @@ const Project = () => {
               </div>
             </div>
             <div id="work" className="pt-3 flex p-0 g-0 justify-between mb-5 pb-5 items-center">
-              <div className=" text-white text-5xl">Featured work</div>
+              <div className=" text-white text-5xl">Our projects</div>
             </div>
             <div>
               <img src="/images/project1.png" className="w-full cursorimg img-fluid" alt="" />

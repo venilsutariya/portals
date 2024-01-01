@@ -1,5 +1,3 @@
-"use client";
-
 import Cards from '@/components/customUi/Cards'
 import Client from '@/components/customUi/Client'
 import FAQ from '@/components/customUi/FAQ'
@@ -22,7 +20,7 @@ export default function Home() {
       <CursorFollower />
       <HeadMain />
       <Client />
-      {/* <div id='howitworks'><ScrollSlider /></div> */}
+      <div id='howitworks'><ScrollSlider /></div>
       <div><Project /></div>
       <div id='howitworks'><WhatYouGet /></div>
       <div><Cards /></div>

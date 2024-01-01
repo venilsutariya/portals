@@ -15,7 +15,7 @@ const FAQ = () => {
                 </div>
             </div>
             <div className=" container py-5">
-                <div className=" text-center text-white text-3xl mb-5">FAQs</div>
+                <div className=" text-center text-white font-bold text-3xl mb-5">Q&A</div>
                 <div className=" lg:px-44">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">

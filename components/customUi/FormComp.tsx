@@ -5,7 +5,8 @@ import VisibilitySensor from 'react-visibility-sensor';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { Loader2 } from 'lucide-react';
-import { useToast } from "@/components/ui/use-toast"
+import { useToast } from "@/components/ui/use-toast";
+import { MdChevronRight } from "react-icons/md";
 
 const FormComp = () => {
     const { toast } = useToast();
@@ -92,6 +93,7 @@ const FormComp = () => {
                                 {
                                     isButton ? <button style={{ borderRadius: '5px', padding: '10px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="mt-5 text-lg flex justify-center items-center text-white hover:opacity-90">
                                         <span>Send message</span>
+                                        <span><MdChevronRight /></span>
                                     </button> : <button style={{ borderRadius: '5px', padding: '10px 25px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="mt-5 text-lg flex justify-center items-center text-white hover:opacity-90" disabled>
                                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                                         Sending

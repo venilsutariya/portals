@@ -98,7 +98,7 @@ section:last-child {
   animation: headanimation 0.8s ease-in-out;
 }
 .animation2 {
-  animation: headanimation 1s ease-in-out;
+  animation: headanimation 1.1s ease-in-out;
 }
 
 .slotanimation {
@@ -144,6 +144,17 @@ textarea:focus {
 @keyframes topanimation {
   0% {
     transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes headanimation {
+  0% {
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
