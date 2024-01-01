@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect, useRef, useState, MouseEventHandler } from 'react';
 
 interface CursorPosition {
@@ -7,14 +5,24 @@ interface CursorPosition {
     y: number;
 }
 
-const CursorFollower: React.FC = () => {
+const CursorFollower: React.FC<{ isHovering: boolean }> = ({ isHovering, setIsHovering }: any) => {
     const cursorRef = useRef<HTMLDivElement | null>(null);
     const [isLeftClicked, setIsLeftClicked] = useState(false);
 
     const updateCursorPosition = (e: MouseEvent) => {
         if (cursorRef.current) {
+            const offset = 10; // Adjust the offset as needed
             cursorRef.current.style.left = e.clientX + 'px';
             cursorRef.current.style.top = e.clientY + 'px';
+
+            // Update width and height when hovering over .cursorimg
+            if (isHovering) {
+                cursorRef.current.style.width = '100px'; // Adjust the width
+                cursorRef.current.style.height = '100px'; // Adjust the height
+            } else {
+                cursorRef.current.style.width = '20px'; // Default width
+                cursorRef.current.style.height = '20px'; // Default height
+            }
         }
     };
 
@@ -58,22 +66,24 @@ const CursorFollower: React.FC = () => {
 
     return (
         <div
-            className={`${isLeftClicked && 'mouseclick'} hidden lg:block`}
+            className={`${isLeftClicked && 'mouseclick'} ${isHovering ? ' p-14 text-center rounded-full' : 'h-20 w-20'} flex justify-center items-center`}
             ref={cursorRef}
             onClick={handleClick}
-            // @ts-ignore
             style={{
                 position: 'fixed',
-                width: '0px',
-                height: '0px',
-                boxShadow: '1px 1px 1000px 20px #fff',
+                backgroundColor: '#B4BCD0',
                 borderRadius: '50%',
                 transform: 'translate(-50%, -50%)',
-                transition: 'all 0.1s',
+                transition: 'all 0.2s',
+                zIndex: '9999999',
+                pointerEvents: 'none', // Add this line
             }}
-        ></div>
+        >
+            {
+                isHovering && <span className={`${isHovering ? 'flex' : 'hidden'} font-semibold`}>Explore</span>
+            }
+        </div>
     );
 };
 
 export default CursorFollower;
-

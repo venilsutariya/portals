@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 import Modal from 'react-bootstrap/Modal';
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-const Project = () => {
+const Project = ({ setIsHovering }: any) => {
   const innerDivRef = useRef<HTMLDivElement | null>(null);
   const [show, setShow] = useState(false);
   const [showSecond, setShowSecond] = useState(false);
@@ -34,7 +34,7 @@ const Project = () => {
       <Modal className=" backdrop-blur-lg" size="xl" show={show} onHide={() => setShow(false)} animation={false}>
         <Modal.Body className=" p-0 relative">
           <div className=" text-violet-300 fixed right-3 top-3" onClick={() => setShow(false)}>
-            <AiOutlineCloseCircle size={40}/>
+            <AiOutlineCloseCircle size={40} />
           </div>
           <img src="/images/fullproject1.jpg" alt="" />
         </Modal.Body>
@@ -44,17 +44,17 @@ const Project = () => {
       <Modal className=" backdrop-blur-lg" size="xl" show={showSecond} onHide={() => setShowSecond(false)} animation={false}>
         <Modal.Body className=" p-0 relative">
           <div className=" text-violet-300 fixed right-3 top-3" onClick={() => setShowSecond(false)}>
-            <AiOutlineCloseCircle size={40}/>
+            <AiOutlineCloseCircle size={40} />
           </div>
           <img src="/images/fullproject2.png" alt="" />
         </Modal.Body>
       </Modal>
-      
+
 
       <Modal className=" backdrop-blur-lg" size="xl" show={showThird} onHide={() => setShowThird(false)} animation={false}>
         <Modal.Body className=" p-0 relative">
           <div className=" text-violet-300 fixed right-3 top-3" onClick={() => setShowThird(false)}>
-            <AiOutlineCloseCircle size={40}/>
+            <AiOutlineCloseCircle size={40} />
           </div>
           <img src="/images/frame 41.png" alt="" />
           <img src="/images/Frame 42.png" alt="" />
@@ -89,7 +89,7 @@ const Project = () => {
               <div className=" text-white text-5xl">Our projects</div>
             </div>
             <div>
-              <img src="/images/project1.png" className="w-full cursorimg img-fluid" alt="" />
+              <img onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project1.png" className="w-full cursorimg img-fluid cursor-pointer" alt="" />
             </div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5">
               <div className="text-white lg:mb-0 mb-3 text-4xl">Veriprod</div>
@@ -100,7 +100,7 @@ const Project = () => {
               </div>
             </div>
             <div className=" mt-5 pt-5">
-              <img onClick={() => setShowSecond(true)} src="/images/project2.png" className="w-full cursorimg img-fluid" alt="" />
+              <img onMouseLeave={() => setIsHovering(false)} onMouseOver={() => setIsHovering(true)} onClick={() => setShowSecond(true)} src="/images/project2.png" className="cursor-pointer w-full cursorimg img-fluid" alt="" />
             </div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5">
               <div className="text-white lg:mb-0 mb-3 text-4xl">Fractionally</div>
@@ -111,7 +111,7 @@ const Project = () => {
               </div>
             </div>
             <div className=" mt-5 pt-5">
-              <img onClick={() => setShow(true)} src="/images/project3.png" className="w-full cursorimg img-fluid" alt="" />
+              <img onMouseLeave={() => setIsHovering(false)} onMouseOver={() => setIsHovering(true)} onClick={() => setShow(true)} src="/images/project3.png" className=" cursor-pointer w-full cursorimg img-fluid" alt="" />
             </div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5">
               <div className="text-white lg:mb-0 mb-3 text-4xl">Restaurant finder web app</div>
@@ -122,7 +122,7 @@ const Project = () => {
               </div>
             </div>
             <div className=" mt-5 pt-5">
-              <img onClick={() => setShowThird(true)} src="/images/project4.png" className="w-full cursorimg img-fluid" alt="" />
+              <img onMouseLeave={() => setIsHovering(false)} onMouseOver={() => setIsHovering(true)} onClick={() => setShowThird(true)} src="/images/project4.png" className=" cursor-pointer w-full cursorimg img-fluid" alt="" />
             </div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5">
               <div className="text-white lg:mb-0 mb-3 text-4xl">Ripen</div>

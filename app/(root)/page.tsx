@@ -1,3 +1,5 @@
+"use client";
+
 import Cards from '@/components/customUi/Cards'
 import Client from '@/components/customUi/Client'
 import FAQ from '@/components/customUi/FAQ'
@@ -12,16 +14,21 @@ import Technologies from '@/components/customUi/Technologies'
 import WhatYouGet from '@/components/customUi/WhatYouGet'
 import WhyChoose from '@/components/customUi/WhyChoose'
 import 'animate.css/animate.min.css';
+import { useState } from 'react';
 
 export default function Home() {
 
+  const [isHovering, setIsHovering] = useState(false);
+
   return (
     <>
-      <CursorFollower />
+      {/* @ts-ignore */}
+      <CursorFollower isHovering={isHovering} setIsHovering={setIsHovering}/>
       <HeadMain />
       <Client />
       <div id='howitworks'><ScrollSlider /></div>
-      <div><Project /></div>
+      {/* @ts-ignore */}
+      <div><Project isHovering={isHovering} setIsHovering={setIsHovering}/></div>
       <div id='howitworks'><WhatYouGet /></div>
       <div><Cards /></div>
       <div id='usecases'><Technologies /></div>

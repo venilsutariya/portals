@@ -25,7 +25,7 @@ const HorizontalScrollCarousel = () => {
   return (
     <section ref={targetRef} className="relative h-[300vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4 text-white">
+        <motion.div style={{ x }} className="flex text-white">
           <div
             className="group relative h-[100vh] w-[100vw] overflow-hidden"
           >
