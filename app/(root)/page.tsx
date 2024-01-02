@@ -9,7 +9,6 @@ import HeadMain from '@/components/customUi/HeadMain'
 import CursorFollower from '@/components/customUi/MouseShadow'
 import Plans from '@/components/customUi/Plans'
 import Project from '@/components/customUi/Project'
-import ScrollSlider from '@/components/customUi/ScrollSlider'
 import Technologies from '@/components/customUi/Technologies'
 import WhatYouGet from '@/components/customUi/WhatYouGet'
 import WhyChoose from '@/components/customUi/WhyChoose'
@@ -19,14 +18,15 @@ import { useState } from 'react';
 export default function Home() {
 
   const [isHovering, setIsHovering] = useState(false);
+  const [isHoveringMain, setIsHoveringMain] = useState(false);
 
   return (
     <>
       {/* @ts-ignore */}
-      <CursorFollower isHovering={isHovering} setIsHovering={setIsHovering}/>
-      <HeadMain />
+      <CursorFollower isHovering={isHovering} isHoveringMain={isHoveringMain}/>
+      {/* @ts-ignore */}
+      <HeadMain setIsHoveringMain={setIsHoveringMain}/>
       <Client />
-      <div id='howitworks'><ScrollSlider /></div>
       {/* @ts-ignore */}
       <div><Project isHovering={isHovering} setIsHovering={setIsHovering}/></div>
       <div id='howitworks'><WhatYouGet /></div>

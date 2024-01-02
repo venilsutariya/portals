@@ -67,7 +67,7 @@ const FAQ = () => {
                     </Accordion>
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>Do you work with pre-existing designs and coding??</AccordionTrigger>
+                            <AccordionTrigger>Do you work with pre-existing designs and coding?</AccordionTrigger>
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
                                 If you already have a design or code that needs to be updated, we can certainly help you out. We excel at taking existing
                                 projects and fine-tuning them into stunning productions.

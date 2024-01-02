@@ -23,7 +23,7 @@ const WhyChoose = () => {
             <div style={{ backgroundColor: '#000212' }} className="">
                 <div className={`whychoose ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                     <div className=" text-white text-center text-3xl lg:text-4xl">
-                        Why Choose Portals?
+                        Why Choose Enterone?
                     </div>
                     <div className="lg:px-32">
                         <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent lg:p-[0.1px] xl:p-[0.3px]  my-10"></div>

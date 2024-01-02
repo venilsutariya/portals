@@ -3,9 +3,9 @@ const Footer = () => {
         <div className="inline-flex  justify-center px-[5.34375rem] py-[6.1875rem] flex-shrink-0  w-full footergrd">
             <div className="">
                 <div className="text-black px-5 leading-trim tracking-tight font-thin text-capitalize text-6xl lg:text-9xl">
-                    Portals.
+                    <img src="/images/Footer.png" className="lg:h-[100px]" alt="" />
                 </div>
-                <div className="row row-cols-1 row-cols-lg-3 px-0 g-0 inline-flex items-start py-24">
+                <div className="row row-cols-1 row-cols-lg-3 px-0 g-0 inline-flex items-start py-24 font-semibold">
                     <div className="col inline-flex flex-col items-start gap-9 px-5 mb-5 mb-lg-0">
                         <div className=" text-black text-xl">
                             <div>Menu</div>

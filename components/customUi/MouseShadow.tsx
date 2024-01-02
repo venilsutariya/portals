@@ -5,7 +5,7 @@ interface CursorPosition {
     y: number;
 }
 
-const CursorFollower: React.FC<{ isHovering: boolean }> = ({ isHovering, setIsHovering }: any) => {
+const CursorFollower: React.FC<{ isHovering: boolean }> = ({ isHovering, isHoveringMain }: any) => {
     const cursorRef = useRef<HTMLDivElement | null>(null);
     const [isLeftClicked, setIsLeftClicked] = useState(false);
 
@@ -14,15 +14,6 @@ const CursorFollower: React.FC<{ isHovering: boolean }> = ({ isHovering, setIsHo
             const offset = 10; // Adjust the offset as needed
             cursorRef.current.style.left = e.clientX + 'px';
             cursorRef.current.style.top = e.clientY + 'px';
-
-            // Update width and height when hovering over .cursorimg
-            if (isHovering) {
-                cursorRef.current.style.width = '100px'; // Adjust the width
-                cursorRef.current.style.height = '100px'; // Adjust the height
-            } else {
-                cursorRef.current.style.width = '20px'; // Default width
-                cursorRef.current.style.height = '20px'; // Default height
-            }
         }
     };
 
@@ -65,24 +56,44 @@ const CursorFollower: React.FC<{ isHovering: boolean }> = ({ isHovering, setIsHo
     }, [isLeftClicked]);
 
     return (
-        <div
-            className={`${isLeftClicked && 'mouseclick'} ${isHovering ? ' p-14 text-center rounded-full' : 'h-20 w-20'} flex justify-center items-center`}
-            ref={cursorRef}
-            onClick={handleClick}
-            style={{
-                position: 'fixed',
-                backgroundColor: '#B4BCD0',
-                borderRadius: '50%',
-                transform: 'translate(-50%, -50%)',
-                transition: 'all 0.2s',
-                zIndex: '9999999',
-                pointerEvents: 'none', // Add this line
-            }}
-        >
+        <>
             {
-                isHovering && <span className={`${isHovering ? 'flex' : 'hidden'} font-semibold`}>Explore</span>
+                !isHoveringMain ? <div
+                    className={`${isLeftClicked && 'mouseclick'} ${isHovering ? ' bg-black text-white h-[100px] w-[100px] text-center rounded-full' : ' bg-black h-0 w-0'} lg:flex justify-center items-center hidden`}
+                    ref={cursorRef}
+                    onClick={handleClick}
+                    style={{
+                        position: 'fixed',
+                        backgroundColor: '#B4BCD0',
+                        borderRadius: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        transition: 'all 0.2s',
+                        zIndex: '9999999',
+                        pointerEvents: 'none', // Add this line
+                    }}
+                >
+                    {
+                        isHovering && <span className={`${isHovering ? 'flex' : 'hidden'} font-semibold`}>Explore</span>
+                    }
+                </div> : <div
+                    ref={cursorRef}
+                    onClick={handleClick}
+                    style={{
+                        position: 'fixed',
+                        backgroundColor: '#B4BCD0',
+                        height: '0px',
+                        width: '0px',
+                        borderRadius: '50%',
+                        boxShadow: '1px 1px 150px 25px #606BD2',
+                        transform: 'translate(-50%, -50%)',
+                        transition: 'all 0.2s',
+                        zIndex: '9999999',
+                        pointerEvents: 'none', // Add this line
+                    }}
+                >
+                </div>
             }
-        </div>
+        </>
     );
 };
 
