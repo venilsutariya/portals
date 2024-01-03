@@ -116,7 +116,7 @@ const Project = ({ setIsHovering }: any) => {
               variants={imageAnimate2}
               transition={{ duration: 1 }}
             >
-              <img onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project2.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
+              <img onClick={() => setShowSecond(true)} onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project2.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
             </motion.div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
             <motion.div className=" flex justify-center"
@@ -126,7 +126,7 @@ const Project = ({ setIsHovering }: any) => {
               variants={imageAnimate}
               transition={{ duration: 1 }}
             >
-              <img onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project3.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
+              <img onClick={() => setShow(true)} onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project3.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
             </motion.div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
             <motion.div className=" flex justify-end"
@@ -136,7 +136,7 @@ const Project = ({ setIsHovering }: any) => {
               variants={imageAnimate2}
               transition={{ duration: 1 }}
             >
-              <img onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project4.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
+              <img onClick={() => setShowThird(true)} onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project4.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
             </motion.div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
           </div>
