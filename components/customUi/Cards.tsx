@@ -28,7 +28,7 @@ const Cards = () => {
                                 <div className="ms-[-12px]">
                                     <img src="/images/card1.png" className='' alt="" />
                                 </div>
-                                <div className=" text-white text-xl my-3">Design</div>
+                                <div className=" text-white text-xl font-semibold my-3">Design</div>
                                 <p className=" tracking-wide text-md" style={{ color: '#D9D9D9' }}>We design websites, web apps, mobile apps, SaaS, Anything in UI & UX and social media assets too.</p>
                             </div>
                         </div>
@@ -37,7 +37,7 @@ const Cards = () => {
                                 <div className="ms-[-12px]">
                                     <img src="/images/card2.png" alt="" />
                                 </div>
-                                <div className=" text-white text-xl my-3">Development</div>
+                                <div className=" text-white font-semibold text-xl my-3">Development</div>
                                 <p className="tracking-wide text-md" style={{ color: '#D9D9D9' }}>We can develop what we can design, Websites, Apps, SaaS etc in Modern technologies; React, Next and Webflow.</p>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const Cards = () => {
                                 <div className="ms-[-20px]">
                                     <img src="/images/card3.png" alt="" />
                                 </div>
-                                <div className=" text-white text-xl my-3">Blend</div>
+                                <div className=" text-white font-semibold text-xl my-3">Blend</div>
                                 <p className="tracking-wide text-md" style={{ color: '#D9D9D9' }}>We also blend both design and development and that&#39;s where real magic happens, <span style={{ color: 'rgba(156, 162, 227, 1)' }}>which means end-to-end product development.</span></p>
                             </div>
                         </div>

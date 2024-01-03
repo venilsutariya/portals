@@ -49,7 +49,7 @@ const FAQ = () => {
                         <AccordionItem value="item-1">
                             <AccordionTrigger>How soon can I begin?</AccordionTrigger>
                             <AccordionContent style={{ color: 'rgba(180, 188, 208, 1)' }}>
-                                Right away--even today.
+                                Right away-even today.
                                 Following your subscription, you will receive a welcome email, and you will be invited to a private Slack channel and paired with
                                 your very own designer and developer From there, you can make as many design and development requests as you need right away. There is no better way to get design and development work done quickly.
                             </AccordionContent>

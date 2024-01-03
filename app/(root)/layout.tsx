@@ -5,7 +5,6 @@ const RootLayout = ({
 }: {
     children: React.ReactNode
 }) => {
-
     return (
         <div className=" relative">
             <div className="absolute w-full">

@@ -64,7 +64,7 @@ const FormComp = () => {
     return (
         <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
             <div>
-                <div className={`pb-20 flex flex-col text-center text-white text-2xl lg:text-3xl ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
+                <div className={`pb-20 flex flex-col text-center font-semibold text-white text-2xl lg:text-3xl ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                     <span>Please share requirements</span>
                     <span>about your projects</span>
                 </div>

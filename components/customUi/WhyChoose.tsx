@@ -22,7 +22,7 @@ const WhyChoose = () => {
         <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
             <div style={{ backgroundColor: '#000212' }} className="">
                 <div className={`whychoose ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
-                    <div className=" text-white text-center text-3xl lg:text-4xl">
+                    <div className=" text-white text-center text-3xl lg:text-4xl font-semibold">
                         Why Choose Enterone?
                     </div>
                     <div className="lg:px-32">

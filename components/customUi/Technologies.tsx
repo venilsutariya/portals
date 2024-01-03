@@ -26,8 +26,8 @@ const Technologies = () => {
                 <div className=' container'>
                 <div className={` row p-0 g-0 ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                     <div className="col-12 col-lg-3 flex justify-start">
-                        <div className=" text-4xl text-white">
-                            <span className=" text-white opacity-40">Some preety <br /> amazing </span>tools
+                        <div className=" text-4xl text-white font-semibold">
+                            <span style={{color: "#B4BCD0"}} className="">Some preety <br /> amazing </span>tools
                         </div>
                     </div>
                     <div className=" col-12 col-lg-9 flex justify-center mt-5 mt-lg-0">

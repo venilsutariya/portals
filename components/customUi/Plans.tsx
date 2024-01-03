@@ -25,7 +25,7 @@ const Plans = () => {
         <>
             <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
                 <div className="py-5 mt-24" style={{ backgroundColor: '#000212' }}>
-                    <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} flex flex-col text-center text-white text-4xl pb-24`}>
+                    <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} flex flex-col font-semibold text-center text-white text-4xl pb-24`}>
                         <div>Flexible plans for</div>
                         <div className="">every use case</div>
                     </div>

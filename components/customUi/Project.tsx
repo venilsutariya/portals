@@ -1,11 +1,22 @@
 "use client";
 
 import VisibilitySensor from "react-visibility-sensor";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Modal from 'react-bootstrap/Modal';
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { useScroll, motion, useAnimation } from "framer-motion";
+
 
 const Project = ({ setIsHovering }: any) => {
+
+  const imageAnimate = {
+    offscreen: { x: -70 },
+    onscreen: { x: 0 }
+  }
+  const imageAnimate2 = {
+    offscreen: { x: 0 },
+    onscreen: { x: -70 }
+  }
   const innerDivRef = useRef<HTMLDivElement | null>(null);
   const [show, setShow] = useState(false);
   const [showSecond, setShowSecond] = useState(false);
@@ -33,7 +44,7 @@ const Project = ({ setIsHovering }: any) => {
       {/* modal */}
       <Modal className=" backdrop-blur-lg" size="xl" show={show} onHide={() => setShow(false)} animation={false}>
         <Modal.Body className=" p-0 relative">
-          <div className=" fixed right-3 top-3" style={{color: '#606BD2'}} onClick={() => setShow(false)}>
+          <div className=" fixed right-3 top-3" style={{ color: '#606BD2' }} onClick={() => setShow(false)}>
             <AiOutlineCloseCircle size={40} />
           </div>
           <img src="/images/fullproject1.jpg" alt="" />
@@ -43,7 +54,7 @@ const Project = ({ setIsHovering }: any) => {
 
       <Modal className=" backdrop-blur-lg" size="xl" show={showSecond} onHide={() => setShowSecond(false)} animation={false}>
         <Modal.Body className=" p-0 relative">
-          <div className=" fixed right-3 top-3" style={{color: '#606BD2'}} onClick={() => setShowSecond(false)}>
+          <div className=" fixed right-3 top-3" style={{ color: '#606BD2' }} onClick={() => setShowSecond(false)}>
             <AiOutlineCloseCircle size={40} />
           </div>
           <img src="/images/fullproject2.png" alt="" />
@@ -53,7 +64,7 @@ const Project = ({ setIsHovering }: any) => {
 
       <Modal className=" backdrop-blur-lg" size="xl" show={showThird} onHide={() => setShowThird(false)} animation={false}>
         <Modal.Body className=" p-0 relative">
-          <div className="  fixed right-3 top-3" style={{color: '#606BD2'}} onClick={() => setShowThird(false)}>
+          <div className="  fixed right-3 top-3" style={{ color: '#606BD2' }} onClick={() => setShowThird(false)}>
             <AiOutlineCloseCircle size={40} />
           </div>
           <img src="/images/frame 41.png" alt="" />
@@ -86,23 +97,47 @@ const Project = ({ setIsHovering }: any) => {
               </div>
             </div>
             <div id="work" className="pt-3 flex p-0 g-0 justify-between mb-5 pb-5 items-center">
-              <div className=" text-white ps-5 text-5xl">Featured projects</div>
+              <div className=" text-white ps-2 ps-lg-5 ms-lg-4 text-2xl lg:text-5xl" style={{ fontWeight: '500' }}>Featured projects</div>
             </div>
-            <div className=" flex justify-start">
+            <motion.div className=" flex justify-center"
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              viewport={{ once: false, amount: 0.3 }}
+              variants={imageAnimate}
+              transition={{ duration: 1 }}
+            >
               <img onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project1.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
-            </div>
+            </motion.div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
-            <div className=" mt-5 flex justify-end">
-              <img onMouseLeave={() => setIsHovering(false)} onMouseOver={() => setIsHovering(true)} onClick={() => setShowSecond(true)} src="/images/project2.png" className="w-[90%] cursor-pointer cursorimg img-fluid" alt="" />
-            </div>
+            <motion.div className=" flex justify-end"
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              viewport={{ once: false, amount: 0.3 }}
+              variants={imageAnimate2}
+              transition={{ duration: 1 }}
+            >
+              <img onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project2.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
+            </motion.div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
-            <div className=" mt-5 flex justify-start">
-              <img onMouseLeave={() => setIsHovering(false)} onMouseOver={() => setIsHovering(true)} onClick={() => setShow(true)} src="/images/project3.png" className="w-[90%] cursor-pointer cursorimg img-fluid" alt="" />
-            </div>
+            <motion.div className=" flex justify-center"
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              viewport={{ once: false, amount: 0.3 }}
+              variants={imageAnimate}
+              transition={{ duration: 1 }}
+            >
+              <img onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project3.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
+            </motion.div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
-            <div className=" mt-5 flex justify-end">
-              <img onMouseLeave={() => setIsHovering(false)} onMouseOver={() => setIsHovering(true)} onClick={() => setShowThird(true)} src="/images/project4.png" className="w-[90%] cursor-pointer cursorimg img-fluid" alt="" />
-            </div>
+            <motion.div className=" flex justify-end"
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              viewport={{ once: false, amount: 0.3}}
+              variants={imageAnimate2}
+              transition={{ duration: 1 }}
+            >
+              <img onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project4.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
+            </motion.div>
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
           </div>
         </VisibilitySensor>

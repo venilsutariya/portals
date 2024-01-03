@@ -24,7 +24,7 @@ const WhatYouGet = () => {
                 <div className="">
                     <div className="row row-cols-1 row-cols-lg-2 p-0 g-0">
                         <div className=" col">
-                            <div className="lg:text-4xl mb-3 mb-lg-0 text-white w-full text-3xl flex justify-start">
+                            <div className="lg:text-4xl font-semibold mb-3 mb-lg-0 text-white w-full text-3xl flex justify-start">
                                 What “exactly” <br />
                                 you will get ?
                             </div>
