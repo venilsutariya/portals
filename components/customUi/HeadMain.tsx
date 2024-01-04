@@ -20,7 +20,7 @@ const HeadMain = ({ setIsHoveringMain }: any) => {
               </span>
             </p>
             <div className=" flex w-full justify-center items-center gap-x-4 mt-3">
-              <button onClick={() => alert("hello")} style={{ borderRadius: '5px', padding: '0px 0px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="w-[175px] h-[55px] text-xl flex justify-center items-center text-white hover:opacity-90">
+              <button style={{ borderRadius: '5px', padding: '0px 0px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="w-[175px] h-[55px] text-xl flex justify-center items-center text-white hover:opacity-90">
                 <span>See plans</span>
                 <span className=" ms-1"><MdChevronRight /></span>
               </button>

@@ -25,8 +25,10 @@ export default function Home() {
       {/* @ts-ignore */}
       <CursorFollower isHovering={isHovering} isHoveringMain={isHoveringMain} />
       {/* @ts-ignore */}
-      <div className=''><HeadMain setIsHoveringMain={setIsHoveringMain} /></div>
-        <Client />
+      <div className=''>
+        <div className=''><HeadMain setIsHoveringMain={setIsHoveringMain} /></div>
+        <div className=''><Client /></div>
+      </div>
         {/* @ts-ignore */}
         <div><Project isHovering={isHovering} setIsHovering={setIsHovering} /></div>
         <div id='howitworks'><WhatYouGet /></div>

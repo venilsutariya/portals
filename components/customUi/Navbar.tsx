@@ -13,10 +13,9 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import Offcanvas2 from './Offcanvas';
 import { IoCloseOutline } from 'react-icons/io5';
 
-const NavbarComp = ({ setIsHoveringMain }: any) => {
+const NavbarComp = () => {
     return (
         <>
             <Navbar style={{zIndex: '9'}} expand="lg" className=" relative px-4 px-lg-5 pt-4">
@@ -27,7 +26,7 @@ const NavbarComp = ({ setIsHoveringMain }: any) => {
                     <SheetTrigger className=' z-50 text-white d-lg-none flex justify-center items-center gap-x-2'>
                         menu <HiOutlineMenuAlt4 />
                     </SheetTrigger>
-                    <SheetContent side={'top'} style={{ backgroundColor: 'rgba(0, 2, 18, 0.7)' }} className=" w-full border-0 h-100 backdrop-blur-2xl">
+                    <SheetContent side={'top'} style={{ backgroundColor: 'rgba(0, 2, 18, 0.8)' }} className=" w-full border-0 h-100 backdrop-blur-3xl">
                         <SheetHeader>
                             <SheetTitle className=''>
                                 <div className='text-white flex mt-[-20px] justify-between items-center'>
@@ -94,7 +93,7 @@ const NavbarComp = ({ setIsHoveringMain }: any) => {
                             <SheetTrigger className='flex justify-center items-center gap-x-2'>
                                 menu <HiOutlineMenuAlt4 />
                             </SheetTrigger>
-                            <SheetContent side={'top'} style={{ backgroundColor: 'rgba(0, 2, 18, 0.7)' }} className=" w-full border-0 h-100 backdrop-blur-2xl">
+                            <SheetContent side={'top'} style={{ backgroundColor: 'rgba(0, 2, 18, 0.8)' }} className=" w-full border-0 h-100 backdrop-blur-3xl">
                                 <SheetHeader>
                                     <SheetTitle className=''>
                                         <div className='text-white flex mt-[-20px] justify-between items-center'>

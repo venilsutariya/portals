@@ -122,10 +122,6 @@ section:last-child {
   transition: transform 0.1s ease-out;
   z-index: 9999;
 }
-
-.mouseclick {
-  /* handle */
-}
 .cursorimg {
   transition: all 0.5s;
 }
@@ -158,7 +154,6 @@ textarea:focus {
   cursor: pointer;
   font-size: 100%;
   margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
 }
 
@@ -246,6 +241,136 @@ textarea:focus {
 }
 .offfont5 {
   animation: offfont 1.4s ease-in-out;
+}
+
+/* .burgerMenu  */
+.mybutton{
+  z-index: 2;
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger {
+  width: 100%;
+}
+
+.burger::after,
+.burger::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.burger::after {
+  top: -5px;
+}
+
+.burger::before {
+  top: 5px;
+}
+
+.burgerActive::after {
+  transform: rotate(45deg);
+  top: -1px;
+}
+
+.burgerActive::before {
+  transform: rotate(-45deg);
+  top: 0px;
+}
+
+/* Nav */
+.mymenu {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000212;
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: white;
+}
+
+.mymenu .mybody {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mymenu .mybody .mynav {
+  display: flex;
+  flex-direction: column;
+  font-size: 56px;
+  gap: 12px;
+  margin-top: 80px;
+}
+
+.mymenu .mybody .mynav .myheader {
+  color: rgb(153, 153, 153);
+  border-bottom: 1px solid rgb(153, 153, 153);
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-bottom: 40px;
+}
+
+.mymenu .mybody .mynav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+.mymenu .myfooter {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 12px;
+  gap: 40px;
+}
+
+
+.mylink{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.myindicator{
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+}
+
+.svgCurve{
+
+  position: absolute;
+
+  top: 0;
+
+  left: -99px;
+
+  width: 100px;
+
+  height: 100%;
+
+  fill: rgb(41, 41, 41);
+
+  stroke: none;
+
 }
 
 @-webkit-keyframes move-up-alternate {
