@@ -1,7 +1,7 @@
 "use client";
 
 import VisibilitySensor from "react-visibility-sensor";
-import { useRef, useState } from "react";
+import {  useRef, useState } from "react";
 import Modal from 'react-bootstrap/Modal';
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -99,7 +99,7 @@ const Project = ({ setIsHovering }: any) => {
             <div id="work" className="pt-3 flex p-0 g-0 justify-between mb-5 pb-5 items-center">
               <div className=" text-white ps-2 ps-lg-5 ms-lg-4 text-2xl lg:text-5xl" style={{ fontWeight: '500' }}>Featured projects</div>
             </div>
-            <motion.div className=" flex justify-center"
+            <motion.div className=" hidden lg:flex justify-center"
               initial={"offscreen"}
               whileInView={"onscreen"}
               viewport={{ once: false, amount: 0.3 }}
@@ -108,18 +108,26 @@ const Project = ({ setIsHovering }: any) => {
             >
               <img onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project1.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
             </motion.div>
+            <div className=" flex lg:hidden justify-center">
+              <img onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project1.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
+            </div>
+            
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
-            <motion.div className=" flex justify-end"
+            <motion.div className=" hidden lg:flex justify-end"
               initial={"offscreen"}
               whileInView={"onscreen"}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: false,  }}
               variants={imageAnimate2}
               transition={{ duration: 1 }}
             >
               <img onClick={() => setShowSecond(true)} onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project2.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
             </motion.div>
+            <div className=" flex lg:hidden justify-center">
+              <img onClick={() => setShowSecond(true)} onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project2.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
+            </div>
+
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
-            <motion.div className=" flex justify-center"
+            <motion.div className=" hidden lg:flex justify-center"
               initial={"offscreen"}
               whileInView={"onscreen"}
               viewport={{ once: false, amount: 0.3 }}
@@ -128,8 +136,12 @@ const Project = ({ setIsHovering }: any) => {
             >
               <img onClick={() => setShow(true)} onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project3.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
             </motion.div>
+            <div className=" flex lg:hidden justify-center">
+              <img onClick={() => setShow(true)} onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project3.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
+            </div>
+
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
-            <motion.div className=" flex justify-end"
+            <motion.div className=" hidden lg:flex justify-end"
               initial={"offscreen"}
               whileInView={"onscreen"}
               viewport={{ once: false, amount: 0.3}}
@@ -138,6 +150,10 @@ const Project = ({ setIsHovering }: any) => {
             >
               <img onClick={() => setShowThird(true)} onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project4.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
             </motion.div>
+            <div className=" flex lg:hidden justify-center">
+              <img onClick={() => setShowThird(true)} onMouseLeave={() => setIsHovering(false)} onMouseEnter={() => setIsHovering(true)} src="/images/project4.png" className=" w-[90%] cursorimg img-fluid cursor-pointer" alt="" />
+            </div>
+
             <div className=" lg:flex justify-between items-center mb-3 mt-5"></div>
           </div>
         </VisibilitySensor>
