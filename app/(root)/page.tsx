@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       {/* @ts-ignore */}
-      {/* <CursorFollower isHovering={isHovering} isHoveringMain={isHoveringMain} /> */}
+      <CursorFollower isHovering={isHovering} isHoveringMain={isHoveringMain} />
       {/* @ts-ignore */}
       <div className=''><HeadMain setIsHoveringMain={setIsHoveringMain} /></div>
         <Client />

@@ -16,10 +16,10 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import Offcanvas2 from './Offcanvas';
 import { IoCloseOutline } from 'react-icons/io5';
 
-const NavbarComp = () => {
+const NavbarComp = ({ setIsHoveringMain }: any) => {
     return (
         <>
-            <Navbar expand="lg" className=" relative px-4 px-lg-5 mx-lg-3 pt-4">
+            <Navbar style={{zIndex: '9'}} expand="lg" className=" relative px-4 px-lg-5 pt-4">
                 <Navbar.Brand href="#home" className=' text-white' style={{ fontSize: '27px' }}>
                     <img src="/images/Enterone.png" className=' h-[20px]' alt="" />
                 </Navbar.Brand>

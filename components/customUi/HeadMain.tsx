@@ -5,7 +5,7 @@ import { MdChevronRight } from "react-icons/md";
 const HeadMain = ({ setIsHoveringMain }: any) => {
 
   return (
-    <div className="" style={{ backgroundColor: '#000212' }} onMouseEnter={() => setIsHoveringMain(true)} onMouseLeave={() => setIsHoveringMain(false)}>
+    <div onMouseEnter={() => setIsHoveringMain(true)} onMouseLeave={() => setIsHoveringMain(false)} className="" style={{ backgroundColor: '#000212' }}>
       <div className=" headmain h-[100vh] flex justify-center">
         <div className=" relative bgmainimg text-white">
           <div className=" flex flex-col justify-center items-center h-full text-center">
@@ -20,13 +20,12 @@ const HeadMain = ({ setIsHoveringMain }: any) => {
               </span>
             </p>
             <div className=" flex w-full justify-center items-center gap-x-4 mt-3">
-              <button style={{ borderRadius: '5px', padding: '0px 0px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="w-[175px] h-[55px] text-xl flex justify-center items-center text-white hover:opacity-90">
+              <button onClick={() => alert("hello")} style={{ borderRadius: '5px', padding: '0px 0px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="w-[175px] h-[55px] text-xl flex justify-center items-center text-white hover:opacity-90">
                 <span>See plans</span>
                 <span className=" ms-1"><MdChevronRight /></span>
               </button>
             </div>
           </div>
-          {/* <div className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" style={{ boxShadow: '1px 1px 200px 35px #606BD2', }}></div> */}
         </div>
       </div>
     </div>
