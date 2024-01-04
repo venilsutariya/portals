@@ -23,20 +23,20 @@ export default function Home() {
   return (
     <>
       {/* @ts-ignore */}
-      <CursorFollower isHovering={isHovering} isHoveringMain={isHoveringMain}/>
+      {/* <CursorFollower isHovering={isHovering} isHoveringMain={isHoveringMain} /> */}
       {/* @ts-ignore */}
-      <HeadMain setIsHoveringMain={setIsHoveringMain}/>
-      <Client />
-      {/* @ts-ignore */}
-      <div><Project isHovering={isHovering} setIsHovering={setIsHovering}/></div>
-      <div id='howitworks'><WhatYouGet /></div>
-      <div><Cards /></div>
-      <div id='usecases'><Technologies /></div>
-      <WhyChoose />
-      <div id='plans'><Plans /></div>
-      <div id='contact'><FormComp /></div>
-      <FAQ />
-      <Footer />
+      <div className=''><HeadMain setIsHoveringMain={setIsHoveringMain} /></div>
+        <Client />
+        {/* @ts-ignore */}
+        <div><Project isHovering={isHovering} setIsHovering={setIsHovering} /></div>
+        <div id='howitworks'><WhatYouGet /></div>
+        <div><Cards /></div>
+        <div id='usecases'><Technologies /></div>
+        <WhyChoose />
+        <div id='plans'><Plans /></div>
+        <div id='contact'><FormComp /></div>
+        <FAQ />
+        <Footer />
     </>
   )
 }

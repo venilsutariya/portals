@@ -233,19 +233,19 @@ textarea:focus {
 }
 
 .offfont1 {
-  animation: offfont 0.2s ease-in-out;
-}
-.offfont2 {
-  animation: offfont 0.4s ease-in-out;
-}
-.offfont3 {
   animation: offfont 0.6s ease-in-out;
 }
-.offfont4 {
+.offfont2 {
   animation: offfont 0.8s ease-in-out;
 }
-.offfont5 {
+.offfont3 {
   animation: offfont 1s ease-in-out;
+}
+.offfont4 {
+  animation: offfont 1.2s ease-in-out;
+}
+.offfont5 {
+  animation: offfont 1.4s ease-in-out;
 }
 
 @-webkit-keyframes move-up-alternate {

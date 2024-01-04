@@ -1,11 +1,10 @@
 "use client";
 
 import VisibilitySensor from "react-visibility-sensor";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Modal from 'react-bootstrap/Modal';
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { useScroll, motion, useAnimation } from "framer-motion";
-
+import { motion } from "framer-motion";
 
 const Project = ({ setIsHovering }: any) => {
 

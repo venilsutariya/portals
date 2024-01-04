@@ -56,7 +56,7 @@ const CursorFollower: React.FC<{ isHovering: boolean }> = ({ isHovering, isHover
     }, [isLeftClicked]);
 
     return (
-        <>
+        <div className=' hidden lg:block'>
             {
                 !isHoveringMain ? <div
                     className={`${isLeftClicked && 'mouseclick'} ${isHovering ? ' bg-black text-white h-[100px] w-[100px] text-center rounded-full' : ' bg-black h-0 w-0'} lg:flex justify-center items-center hidden`}
@@ -69,7 +69,7 @@ const CursorFollower: React.FC<{ isHovering: boolean }> = ({ isHovering, isHover
                         transform: 'translate(-50%, -50%)',
                         transition: 'all 0.2s',
                         zIndex: '9999999',
-                        pointerEvents: 'none', // Add this line
+                        pointerEvents: 'none',
                     }}
                 >
                     {
@@ -89,12 +89,12 @@ const CursorFollower: React.FC<{ isHovering: boolean }> = ({ isHovering, isHover
                         transform: 'translate(-50%, -50%)',
                         transition: 'all 0.2s',
                         zIndex: '9999999',
-                        pointerEvents: 'none', // Add this line
+                        pointerEvents: 'none',
                     }}
                 >
                 </div>
             }
-        </>
+        </div>
     );
 };
 
