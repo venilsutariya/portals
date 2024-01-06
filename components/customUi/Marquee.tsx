@@ -14,8 +14,8 @@ const MarqueeComp = () => {
                 <div className="a-section">
                     <div className="a-section-marquee-box">
                         {
-                            marqueeArr.map((imdex: number) => (
-                                <div className=" flex items-center gap-x-[1.75rem] uppercase text-3xl md:text-5xl lg:text-7xl">
+                            marqueeArr.map((index: number) => (
+                                <div key={index} className=" flex items-center gap-x-[1.75rem] uppercase text-3xl md:text-5xl lg:text-7xl">
                                     <span className=" h-[50px] w-[50px] lg:h-auto lg:w-auto flex justify-center items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
                                             <path d="M48 0L53.5106 34.6961L81.9411 14.0589L61.3039 42.4894L96 48L61.3039 53.5106L81.9411 81.9411L53.5106 61.3039L48 96L42.4894 61.3039L14.0589 81.9411L34.6961 53.5106L0 48L34.6961 42.4894L14.0589 14.0589L42.4894 34.6961L48 0Z" fill="url(#paint0_linear_637_1968)" />
@@ -54,8 +54,8 @@ const MarqueeComp = () => {
                 <div className="a-section">
                     <div className="a-section-marquee-box">
                         {
-                            marqueeArr.map((imdex: number) => (
-                                <div className=" flex items-center gap-x-[1.75rem] uppercase text-3xl md:text-5xl lg:text-7xl">
+                            marqueeArr.map((index: number) => (
+                                <div key={index} className=" flex items-center gap-x-[1.75rem] uppercase text-3xl md:text-5xl lg:text-7xl">
                                     <span className=" h-[50px] w-[50px] lg:h-auto lg:w-auto flex justify-center items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
                                             <path d="M48 0L53.5106 34.6961L81.9411 14.0589L61.3039 42.4894L96 48L61.3039 53.5106L81.9411 81.9411L53.5106 61.3039L48 96L42.4894 61.3039L14.0589 81.9411L34.6961 53.5106L0 48L34.6961 42.4894L14.0589 14.0589L42.4894 34.6961L48 0Z" fill="url(#paint0_linear_637_1968)" />
@@ -94,8 +94,8 @@ const MarqueeComp = () => {
                 <div className="a-section">
                     <div className="a-section-marquee-box">
                         {
-                            marqueeArr.map((imdex: number) => (
-                                <div className=" flex items-center gap-x-[1.75rem] uppercase text-3xl md:text-5xl lg:text-7xl">
+                            marqueeArr.map((index: number) => (
+                                <div key={index} className=" flex items-center gap-x-[1.75rem] uppercase text-3xl md:text-5xl lg:text-7xl">
                                     <span className=" h-[50px] w-[50px] lg:h-auto lg:w-auto flex justify-center items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
                                             <path d="M48 0L53.5106 34.6961L81.9411 14.0589L61.3039 42.4894L96 48L61.3039 53.5106L81.9411 81.9411L53.5106 61.3039L48 96L42.4894 61.3039L14.0589 81.9411L34.6961 53.5106L0 48L34.6961 42.4894L14.0589 14.0589L42.4894 34.6961L48 0Z" fill="url(#paint0_linear_637_1968)" />
