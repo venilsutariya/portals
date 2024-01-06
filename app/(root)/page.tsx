@@ -1,11 +1,11 @@
 "use client";
 
 import Cards from '@/components/customUi/Cards'
-import Client from '@/components/customUi/Client'
 import FAQ from '@/components/customUi/FAQ'
 import Footer from '@/components/customUi/Footer'
 import FormComp from '@/components/customUi/FormComp'
 import HeadMain from '@/components/customUi/HeadMain'
+import MarqueeComp from '@/components/customUi/Marquee';
 import CursorFollower from '@/components/customUi/MouseShadow'
 import Plans from '@/components/customUi/Plans'
 import Project from '@/components/customUi/Project'
@@ -25,20 +25,18 @@ export default function Home() {
       {/* @ts-ignore */}
       <CursorFollower isHovering={isHovering} isHoveringMain={isHoveringMain} />
       {/* @ts-ignore */}
-      <div className=''>
-        <div className=''><HeadMain setIsHoveringMain={setIsHoveringMain} /></div>
-        <div className=''><Client /></div>
-      </div>
-        {/* @ts-ignore */}
-        <div><Project isHovering={isHovering} setIsHovering={setIsHovering} /></div>
-        <div id='howitworks'><WhatYouGet /></div>
-        <div><Cards /></div>
-        <div id='usecases'><Technologies /></div>
-        <WhyChoose />
-        <div id='plans'><Plans /></div>
-        <div id='contact'><FormComp /></div>
-        <FAQ />
-        <Footer />
+      <div className=''><HeadMain setIsHoveringMain={setIsHoveringMain} /></div>
+      <MarqueeComp />
+      {/* @ts-ignore */}
+      {/* <div><Project isHovering={isHovering} setIsHovering={setIsHovering} /></div> */}
+      <div id='howitworks'><WhatYouGet /></div>
+      <div><Cards /></div>
+      <div id='usecases'><Technologies /></div>
+      <WhyChoose />
+      <div id='plans'><Plans /></div>
+      <div id='contact'><FormComp /></div>
+      <FAQ />
+      <Footer />
     </>
   )
 }

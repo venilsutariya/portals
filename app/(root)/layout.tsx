@@ -8,7 +8,6 @@ const RootLayout = ({
     return (
         <div className=" relative">
             <div className=" absolute w-full">
-                <NavbarComp />
             </div>
             {children}
         </div>

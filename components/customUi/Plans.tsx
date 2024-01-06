@@ -35,23 +35,23 @@ const Plans = () => {
                                 <div className="w-full lg:w-[25.75rem]">
                                     <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} bg-white py-5 px-5 rounded-xl border-1`}>
                                         <div className=" text-xl font-semibold">Essential plan</div>
-                                        <p className=" text-gray-500">Provides you with the most freedom.
+                                        <p className=" text-gray-500" style={{fontSize: '17px'}}>Provides you with the most freedom.
                                             Perfect for testing out the plan.</p>
                                         <hr className=' my-3'/>
-                                        <div className=" text-black font-semibold mb-2">
+                                        <div className=" text-black font-bold mb-2">
                                             <span className=" text-4xl">$1,800</span> /month
                                         </div>
-                                        <p className=" text-gray-500">Billed monthly</p>
+                                        <p className=" text-gray-500" style={{fontSize: '17px'}}>Billed monthly</p>
                                         <button style={{ borderRadius: '5px', margin: '20px 0px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
                                             <span>Get  started</span>
                                             <span className=" ms-1"><MdChevronRight /></span>
                                         </button>
                                         <div className=" text-black mt-4 mb-4 font-semibold">What&#39;s included</div>
-                                        <p className="mb-3 flex gap-x-2"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited revisions</span></p>
-                                        <p className="mb-3 flex gap-x-2"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited development</span></p>
-                                        <p className="mb-3 flex gap-x-2"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span>Unlimited brands</span></p>
-                                        <p className="mb-3 flex gap-x-2"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span>Dedicated designer and developer</span></p>
-                                        <p className="mb-3 flex gap-x-2"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span>Slack/Trello channel</span></p>
+                                        <p className="mb-3 flex gap-x-2" style={{fontSize: '17px', color: '#000212'}}><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className='opacity-60'>Unlimited revisions</span></p>
+                                        <p className="mb-3 flex gap-x-2" style={{fontSize: '17px', color: '#000212'}}><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className='opacity-60'>Unlimited development</span></p>
+                                        <p className="mb-3 flex gap-x-2" style={{fontSize: '17px', color: '#000212'}}><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className='opacity-60'>Unlimited brands</span></p>
+                                        <p className="mb-3 flex gap-x-2" style={{fontSize: '17px', color: '#000212'}}><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className='opacity-60'>Dedicated designer and developer</span></p>
+                                        <p className="mb-3 flex gap-x-2" style={{fontSize: '17px', color: '#000212'}}><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className='opacity-60'>Slack/Trello channel</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -59,23 +59,23 @@ const Plans = () => {
                                 <div className=" lg:w-[25.75rem]">
                                     <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''} bg-transparent border py-5 px-5 rounded-xl`}>
                                         <div className=" text-xl text-white font-medium">Essential quarterly plan</div>
-                                        <p className=" text-gray-500">Best plan for longer projects
+                                        <p className=" text-gray-500" style={{fontSize: '17px'}}>Best plan for longer projects
                                            <br /> with extra discount.</p>
                                         <hr className=' text-white my-3'/>
                                         <div className=" text-white mb-2">
-                                            <span className=" text-4xl">$1,530</span> /month
+                                            <span className=" text-4xl font-bold">$1,530</span> /month
                                         </div>
-                                        <p className=" text-gray-500">Billed quarterly</p>
+                                        <p className=" text-gray-500" style={{fontSize: '17px'}}>Billed quarterly</p>
                                         <button style={{ borderRadius: '5px', margin: '20px 0px', padding: '12px 12px', border: '1px solid #606BD2', transition: 'all 0.3s', backgroundColor: '#606BD2' }} className="text-xl flex justify-center items-center text-white hover:opacity-90 w-full">
                                             <span>Get  started</span>
                                             <span className=" ms-1"><MdChevronRight /></span>
                                         </button>
                                         <div className=" text-white mt-4 mb-4 font-medium">What&#39;s included</div>
-                                        <p className=" flex gap-x-2 mb-3"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited revisions</span></p>
-                                        <p className=" flex gap-x-2 mb-3"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited development</span></p>
-                                        <p className=" flex gap-x-2 mb-3"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited brands</span></p>
-                                        <p className=" flex gap-x-2 mb-3"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Dedicated designer and developer</span></p>
-                                        <p className=" flex gap-x-2 mb-3"><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Slack/Trello channel</span></p>
+                                        <p className=" flex gap-x-2 mb-3" style={{fontSize: '17px'}}><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited revisions</span></p>
+                                        <p className=" flex gap-x-2 mb-3" style={{fontSize: '17px'}}><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited development</span></p>
+                                        <p className=" flex gap-x-2 mb-3" style={{fontSize: '17px'}}><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Unlimited brands</span></p>
+                                        <p className=" flex gap-x-2 mb-3" style={{fontSize: '17px'}}><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Dedicated designer and developer</span></p>
+                                        <p className=" flex gap-x-2 mb-3" style={{fontSize: '17px'}}><span className=' mt-1'><IoMdCheckmark color={'#606BD2'} /></span><span className=" text-gray-500">Slack/Trello channel</span></p>
                                     </div>
                                 </div>
                             </div>

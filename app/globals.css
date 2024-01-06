@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "CustomFont";
-  src: url("../public/fonts/InterDisplay-ExtraLightItalic.woff2");
+  src: url("../public/fonts/InterDisplay-LightItalic.woff2");
 }
 
 html {
@@ -55,13 +55,6 @@ td {
   margin: 0;
   scroll-snap-type: y mandatory;
 }
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  scroll-snap-align: start;
-}
 .animation {
   transition: 0.5s ease;
 }
@@ -69,31 +62,6 @@ section {
 .whychoose {
   background: linear-gradient(0deg, #19142e00, #201a372c, #231a4a21, #19142e00);
 }
-
-/* for scroll component */
-section {
-  align-items: center;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  padding: 1rem;
-  width: 100%;
-  z-index: -1;
-}
-
-section:nth-child(2) {
-  z-index: -2;
-}
-
-section:nth-child(3) {
-  z-index: -3;
-}
-
-section:last-child {
-  z-index: -4;
-}
-
 .animation {
   animation: headanimation 1s ease-in-out;
 }
@@ -244,7 +212,7 @@ textarea:focus {
 }
 
 /* .burgerMenu  */
-.mybutton{
+.mybutton {
   z-index: 2;
   width: 80px;
   height: 40px;
@@ -339,14 +307,13 @@ textarea:focus {
   gap: 40px;
 }
 
-
-.mylink{
+.mylink {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.myindicator{
+.myindicator {
   width: 10px;
   height: 10px;
   background-color: white;
@@ -355,22 +322,49 @@ textarea:focus {
   left: -30px;
 }
 
-.svgCurve{
-
+.svgCurve {
   position: absolute;
-
   top: 0;
-
   left: -99px;
-
   width: 100px;
-
   height: 100%;
-
-  fill: rgb(41, 41, 41);
-
   stroke: none;
+}
 
+/* marquee */
+.a-section-marquee-box {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.a-section-marquee-box div {
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0 10px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  transform: translateX(0);
+  animation: a-text-scroll 10s linear infinite;
+}
+@keyframes a-text-scroll {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+
+
+@keyframes marqueeSlide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+p {
+  color: white;
+  font-size: 30px;
 }
 
 @-webkit-keyframes move-up-alternate {
