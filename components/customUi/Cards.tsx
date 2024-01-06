@@ -53,7 +53,7 @@ const Cards = () => {
                     </div>
                 </div>
                 <div className=" lg:px-32">
-                    <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent lg:p-[0.1px] xl:p-[0.3px] my-28"></div>
+                    <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent p-[0.5px] lg:p-[0.3px] my-28"></div>
                 </div>
             </div>
         </VisibilitySensor>

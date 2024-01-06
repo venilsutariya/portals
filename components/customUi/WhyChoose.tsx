@@ -26,7 +26,7 @@ const WhyChoose = () => {
                         Why Choose Enterone?
                     </div>
                     <div className="lg:px-32">
-                        <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent lg:p-[0.1px] xl:p-[0.3px]  my-10"></div>
+                        <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent p-[0.5px] lg:p-[0.3px]  my-10"></div>
                     </div>
                     <div className="px-5">
                         <div className=' relative lg:px-28 flex justify-center items-end'>

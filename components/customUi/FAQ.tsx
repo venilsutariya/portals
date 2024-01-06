@@ -10,8 +10,8 @@ import {
 const FAQ = () => {
     return (
         <div>
-            <div className=" mb-5 mt-24 py-5">
-                <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent p-[0.5px]  my-10 relative text-center">
+            <div className=" lg:px-24 pt-5">
+                <div className=" bg-gradient-to-r from-transparent via-blue-200/30 to-transparent p-[0.5px] lg:p-[0.3px] my-10 relative text-center">
                 </div>
             </div>
             <div className=" container py-5">
