@@ -28,7 +28,7 @@ export default function Home() {
       <div className=''><HeadMain setIsHoveringMain={setIsHoveringMain} /></div>
       <MarqueeComp />
       {/* @ts-ignore */}
-      {/* <div><Project isHovering={isHovering} setIsHovering={setIsHovering} /></div> */}
+      <div><Project isHovering={isHovering} setIsHovering={setIsHovering} /></div>
       <div id='howitworks'><WhatYouGet /></div>
       <div><Cards /></div>
       <div id='usecases'><Technologies /></div>
