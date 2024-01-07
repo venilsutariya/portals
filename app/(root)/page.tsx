@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <SmoothScroll>
+      {/* <SmoothScroll> */}
         {/* @ts-ignore */}
         <CursorFollower isHovering={isHovering} isHoveringMain={isHoveringMain} />
         {/* @ts-ignore */}
@@ -39,7 +39,7 @@ export default function Home() {
         <div id='contact'><FormComp /></div>
         <FAQ />
         <Footer />
-      </SmoothScroll>
+      {/* </SmoothScroll> */}
     </>
   )
 }
