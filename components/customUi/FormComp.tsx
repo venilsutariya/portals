@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import VisibilitySensor from 'react-visibility-sensor';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { Loader2 } from 'lucide-react';
@@ -48,12 +47,6 @@ const FormComp = () => {
         }
     }
 
-    const onVisibilityChange = (visible: boolean) => {
-        if (visible) {
-            setIsVisible(true);
-        }
-    };
-
     useEffect(() => {
         // Reset the isVisible state when the component unmounts or when you leave the section
         return () => {
@@ -62,7 +55,6 @@ const FormComp = () => {
     }, []);
 
     return (
-        <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
             <div>
                 <div className={`pb-20 flex flex-col text-center font-semibold text-white text-2xl lg:text-3xl ${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                     <span>Please share requirements</span>
@@ -104,7 +96,6 @@ const FormComp = () => {
                     </div>
                 </div>
             </div>
-        </VisibilitySensor>
     );
 }
 

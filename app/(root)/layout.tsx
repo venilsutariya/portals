@@ -1,5 +1,3 @@
-import NavbarComp from "@/components/customUi/Navbar";
-
 const RootLayout = ({
     children
 }: {

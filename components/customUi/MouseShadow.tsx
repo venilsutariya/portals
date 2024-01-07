@@ -81,14 +81,15 @@ const CursorFollower: React.FC<{ isHovering: boolean }> = ({ isHovering, isHover
                     style={{
                         position: 'fixed',
                         backgroundColor: '#B4BCD0',
-                        height: '0%',
-                        width: '0%',
+                        height: '0px',
+                        width: '0px',
                         borderRadius: '50%',
-                        boxShadow: '1px 1px 100px 15px #606BD2',
+                        boxShadow: '1px 1px 200px 20px #606BD2',
                         opacity: '0.8',
                         transform: 'translate(-50%, -50%)',
                         transition: 'all 0.2s',
                         pointerEvents: 'none',
+                        zIndex: '99999999'
                     }}
                 >
                 </div>
